@@ -7,6 +7,11 @@
     --green-m: #079B94;
     --green-p: #0FBCB3;
     --grey: #8D8BA7;
+    --gray-text: #9795B5;
+    --gray-1000: #767494;
+    --gray-800: #ADABC3;
+    --gray-300:#F9F9FF;
+    --gray-500:#E7E6F2;
     --radius: 8px;
     --transition: 0.3s;
 }
@@ -54,11 +59,10 @@
 
 .about-us .main-img {
     max-width: 100%;
-    height: 450px;
     position: absolute;
-    top: 47%;
-    left: 0;
-    transform: translate(0, -47%);
+    top: 46%;
+    left: 2%;
+    transform: translate(0, -46%);
 }
 
 .about-us h2 {
@@ -94,12 +98,25 @@
     margin-right: 10px;
 }
 
-@media (max-width: 767px) {
+ .about-us .section-padding {
+    padding: 55px 25px;
+}
+
+@media (max-width: 1200px) {
+     .about-us .section-padding {
+        padding: 30px 20px;;
+     }
+}
+
+
+@media (max-width: 992px) {
     .about-us {
         background-color: var(--white);
         color: var(--basic);
         font-weight: 500;
     }
+
+   
     .about-us h2 {
         font-size: 28px;
     }
@@ -119,4 +136,266 @@
 .counter {
     background-image: url(../images/counter-bg.png);
     background-position: center;
+}
+
+.counter h2 {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.counter h2 span {
+    color: var(--basic);
+}
+
+.counter p {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.counter .counter-card {
+    border: 1px solid var(--white);
+    border-radius: 11px;
+    padding: 15px;
+    width: 120px;
+    background: linear-gradient(180deg, rgb(28 58 58) 0%, #2b4947d4 18%, #0FBCB3 100%);
+}
+
+.counter .counter-card .number {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.counter .counter-card .desc {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+@media (max-width: 992px) {
+    .counter h2 {
+        font-size: 28px;
+    }
+
+   
+
+    .counter .counter-card {
+        width: 100px;
+        padding: 10px;
+    }
+
+    .counter .counter-card .number {
+        font-size: 24px;
+    }
+
+    .counter .counter-card .desc {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 767px) {
+     .counter p {
+        font-size: 14px;
+    }
+}
+
+/* case-studies */
+.case-studies {
+    background-image: url('../images/case-studies-bg.png');
+    background-position: center;
+}
+
+.case-studies h3 {
+    font-weight: 700;
+    font-size: 44px;
+}
+
+.case-studies p {
+    font-weight: 500;
+}
+
+.case-studies a {
+    font-size: 14px;
+    text-decoration: underline;
+    transition: var(--transition);
+}
+
+.case-studies a:hover {
+    color: var(--green-p);
+}
+
+.case-studies .case-study-slider div {
+     padding: 10px;
+}
+
+.case-studies .case-study-slider img {
+    border-radius: 20px;
+    max-width: 100%;
+}
+
+.slick-dots li button:before {
+    content: "";
+    width: 100%;
+    background: var(--white);
+    opacity: 1;
+    height: 3px;
+    border-radius: 25px;
+    transition: var(--transition);
+}
+
+.slick-dots li.slick-active button:before  {
+    background-color: var(--green-p);
+}
+
+.slick-dots li {
+    width: 70px;
+    margin: 0 5px;
+}
+
+.case-studies .slick-dots li.slick button:before {
+    background-color: var(--white);
+    color: var(--white);
+}
+
+.slick-dots li button {
+    height: 3px;
+    width: 70px;
+}
+
+.case-studies .slick-slide {
+    float: left;
+}
+
+@media (max-width: 992px) {
+    .case-studies h3 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 767px) {
+    .case-studies a {
+        text-decoration: none;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .case-studies p {
+        font-size: 14px;
+    }
+
+    .case-studies .slick-dots li, .case-studies .slick-dots li button {
+        width: 50px;
+    }
+}
+
+/* reviews */
+.reviews .head-title h2 {
+font-weight: 700;
+font-size: 40px;
+}
+
+.reviews .head-title div {
+color: var(--gray-text);
+padding: 0 25%;
+}
+
+.reviews .review-card {
+    margin: 0 10px;
+    cursor: grab;
+}
+
+.reviews .review-card .box {
+    border: 1px solid var(--gray-800);
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: var(--gray-300);
+}
+
+.reviews .review-card .box img {
+        width: 25px;
+}
+
+.reviews .review-card .box p {
+    color: var(--gray-1000);
+    font-size: 14px;
+}
+
+.reviews .review-card .user-img {
+    border: 3px solid var(--green-m);
+    border-radius: 50%;
+    width: 70px;
+    margin: auto;
+    overflow: hidden;
+    height: 70px;
+}
+
+.reviews .review-card .user-img img {
+    width: 100%;
+}
+
+.reviews .review-card .image img {
+    width: 15px;
+    margin: 12px auto;
+}
+
+.reviews .review-card .user h4 {
+    color: var(--black);
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    font-weight: 600;
+}
+
+.reviews .review-card .user {
+    margin-bottom: 30px;
+}
+
+.reviews .review-card .user .position {
+    color: var(--grey);
+    font-size: 14px;
+}
+
+.reviews  .slick-dots li button:before {
+    background-color: var(--gray-500);
+}
+
+.reviews .slick-dots li.slick-active button:before  {
+    background-color: var(--green-p);
+}
+
+.reviews .slick-next, .slick-prev {
+    display: block !important;
+}
+
+@media (max-width: 767px) {
+    .reviews .head-title h2 {
+        font-size: 30px;
+        padding: 0 30px;
+    }
+
+    .reviews .head-title div {
+        font-size: 14px;
+    }
+
+    .reviews .review-card .box p {
+        font-size: 12px;
+    }
+
+    .reviews .slick-next {
+    right: 10%;
+    top: 93%;
+    }
+
+    .slick-prev {
+    left: 10%;
+    top: 93%
+    }
+
+    .reviews .slick-next:before, .reviews .slick-prev:before {
+        color: var(--green-p);
+    }
+
+    .slick-next:before {
+        font-family: "Font Awesome 5 Brands"; content: "\f061";
+        color: var(--white);
+        background-color: var(--green-m);
+    }
 }
