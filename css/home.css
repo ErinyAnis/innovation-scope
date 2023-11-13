@@ -201,86 +201,7 @@
 }
 
 /* case-studies */
-.case-studies {
-    background-image: url('../images/case-studies-bg.png');
-    background-position: center;
-}
 
-.case-studies h3 {
-    font-weight: 700;
-    font-size: 44px;
-}
-
-.case-studies p {
-    font-weight: 500;
-}
-
-.case-studies a {
-    font-size: 14px;
-    text-decoration: underline;
-    transition: var(--transition);
-}
-
-.case-studies a:hover {
-    color: var(--green-p);
-}
-
-.case-studies .case-study-slider img {
-    border-radius: 20px;
-    max-width: 100%;
-    padding: 0 10px;
-}
-
-.slick-dots li button:before {
-    content: "";
-    width: 100%;
-    background: var(--white);
-    opacity: 1;
-    height: 3px;
-    border-radius: 25px;
-    transition: var(--transition);
-}
-
-.slick-dots li.slick-active button:before  {
-    background-color: var(--green-p);
-}
-
-.slick-dots li {
-    width: 70px;
-    margin: 0 5px;
-}
-
-.case-studies .slick-dots li.slick button:before {
-    background-color: var(--white);
-    color: var(--white);
-}
-
-.slick-dots li button {
-    height: 3px;
-    width: 70px;
-}
-
-@media (max-width: 992px) {
-    .case-studies h3 {
-        font-size: 28px;
-    }
-}
-
-@media (max-width: 767px) {
-    .case-studies a {
-        text-decoration: none;
-        text-align: center;
-        font-size: 14px;
-    }
-
-    .case-studies p {
-        font-size: 14px;
-    }
-
-    .case-studies .slick-dots li, .case-studies .slick-dots li button {
-        width: 50px;
-    }
-}
 
 /* reviews */
 .reviews .head-title h2 {
@@ -391,8 +312,8 @@ padding: 0 25%;
     .reviews .slick-prev {
         display: block !important;
         z-index: 2;
-        width: 30px;
-        height: 33px;
+        width: 25px;
+        height: 25px;
         transition: var(--transition);
     }
 
@@ -411,13 +332,7 @@ padding: 0 25%;
     }
 
     .reviews .slick-next:before, .reviews .slick-prev:before {
-        color: var(--green-p);
-            z-index: 2;
+        z-index: 2;
     }
 
-    .slick-next:before {
-        font-family: "Font Awesome 6 Brands"; content: "\f061";
-        color: var(--white);
-        background-color: var(--green-m);
-    }
 }

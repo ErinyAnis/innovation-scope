@@ -1,0 +1,95 @@
+:root {
+    --black: #2E2D2D;
+    --basic: #1D1B1B;
+    --white: #FFFFFF;
+    --green-m: #079B94;
+    --green-p: #0FBCB3;
+    --grey: #8D8BA7;
+    --gray-text: #9795B5;
+    --gray-1000: #767494;
+    --gray-800: #ADABC3;
+    --gray-300:#F9F9FF;
+    --gray-500:#E7E6F2;
+    --gray-400:#F2F1FA;
+    --gray-700: #BCBACD;
+    --radius: 8px;
+    --transition: 0.3s;
+}
+
+.main-slider {
+    background: none;
+     color: var(--basic);
+}
+
+.main-slider .slick-dots li button:before {
+    background-color: var(--gray-500);
+}
+
+.main-slider .slick-dots li.slick-active button:before  {
+    background-color: var(--green-p);
+}
+
+.links {
+    color: var(--basic);
+}
+
+.links .title h3 {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.links .title div {
+    font-weight: 500;
+    font-size: 18px;
+    padding-right: 50%;
+}
+
+.links .link {
+    background-color: var(--gray-400);
+    border: 1px solid var(--gray-700);
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 7px;
+    transition: var(--transition);
+}
+
+.links .link:hover i {
+    display: none;
+}
+
+.links .link i {
+    color: var(--green-p);
+    margin-right: 7px;
+    transition: var(--transition);
+}
+
+.links .link .hover-icon {
+    display: none;
+    transition: var(--transition);
+}
+
+.links .link:hover .hover-icon {
+    display: block;
+}
+
+.links .link a {
+    color: var(--basic);
+}
+
+.links .col-lg-3, .links .col-xl-3 {
+    padding: 10px;
+}
+
+@media (max-width: 767px) {
+    .links .title h3 {
+        font-size: 24px;
+    }
+
+    .links .title div {
+        font-size: 14px;
+    }
+
+    .links .link {
+        font-size: 12px;
+    }
+}

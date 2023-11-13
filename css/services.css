@@ -1,0 +1,100 @@
+:root {
+    --black: #2E2D2D;
+    --basic: #1D1B1B;
+    --white: #FFFFFF;
+    --green-m: #079B94;
+    --green-p: #0FBCB3;
+    --grey: #8D8BA7;
+    --gray-text: #9795B5;
+    --gray-1000: #767494;
+    --gray-800: #ADABC3;
+    --gray-300:#F9F9FF;
+    --gray-500:#E7E6F2;
+    --radius: 8px;
+    --transition: ease 0.3s;
+}
+
+body {
+    background-color: var(--black);
+}
+
+/* our-services */
+.our-services h2 {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.our-services p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.our-services .card-container {
+     margin: 15px 0;
+}
+
+.our-services .card {
+    background-color: #514e4e78;
+    text-align: center;
+    padding: 30px 20px;
+    border: 1px solid var(--green-p);
+    height: 200px;
+    border-radius: 15px;
+    position: relative;
+    transition: var(--transition);
+}
+
+.our-services .card .img-holder {
+    margin: 0 auto 20px;
+    height: 75px;
+}
+
+.our-services .card .img-holder img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.our-services .card .desc {
+    color: var(--white);
+    font-size: 14px;
+}
+
+.our-services .card .hover-icon {
+    background-color: var(--green-p);
+    color: var(--white);
+    border-radius: 50%;
+    position: absolute;
+    padding: 10px;
+    top: 90%;
+    left: 42%;
+    transition: var(--transition);
+    opacity: 0;
+}
+
+.our-services .card:hover .hover-icon {
+    opacity: 1;
+}
+
+.our-services .card:hover {
+    background: linear-gradient(149deg, rgb(56 117 114 / 73%) 0%, rgb(52 74 78 / 73%) 35%, rgb(44 54 52 / 57%) 100%);
+}
+
+@media (max-width: 767px) {
+    .our-services h2 {
+        font-size: 28px;
+    }
+
+    .our-services p {
+        font-size: 14px;
+    }
+
+    .our-services .card {
+        height: 180px;
+    }
+
+    .our-services .card .img-holder {
+        height: 50px;
+    }
+
+}
