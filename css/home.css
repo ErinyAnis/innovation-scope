@@ -380,17 +380,18 @@ padding: 0 25%;
     }
 
     .reviews .slick-next {
-    right: 10%;
+    right: 20%;
     top: 93%;
     }
 
     .slick-prev {
-    left: 10%;
+    left: 20%;
     top: 93%
     }
 
     .reviews .slick-next:before, .reviews .slick-prev:before {
         color: var(--green-p);
+            z-index: 2;
     }
 
     .slick-next:before {
