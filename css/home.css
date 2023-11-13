@@ -175,8 +175,6 @@
         font-size: 28px;
     }
 
-   
-
     .counter .counter-card {
         width: 100px;
         padding: 10px;
@@ -192,9 +190,14 @@
 }
 
 @media (max-width: 767px) {
-     .counter p {
+    .counter p {
         font-size: 14px;
     }
+}
+
+/* video */
+.video {
+    margin-bottom: -8px;
 }
 
 /* case-studies */
@@ -222,13 +225,10 @@
     color: var(--green-p);
 }
 
-.case-studies .case-study-slider div {
-     padding: 10px;
-}
-
 .case-studies .case-study-slider img {
     border-radius: 20px;
     max-width: 100%;
+    padding: 0 10px;
 }
 
 .slick-dots li button:before {
@@ -258,10 +258,6 @@
 .slick-dots li button {
     height: 3px;
     width: 70px;
-}
-
-.case-studies .slick-slide {
-    float: left;
 }
 
 @media (max-width: 992px) {
@@ -300,22 +296,35 @@ padding: 0 25%;
 .reviews .review-card {
     margin: 0 10px;
     cursor: grab;
+    opacity: 0.6;
+    transition: var(--transition);
+}
+
+.reviews .review-card.slick-current {
+    opacity: 1;
 }
 
 .reviews .review-card .box {
     border: 1px solid var(--gray-800);
     border-radius: 20px;
-    padding: 10px 20px;
+    padding: 15px 20px;
     background-color: var(--gray-300);
+    min-height: 120px;
 }
 
 .reviews .review-card .box img {
-        width: 25px;
+    width: 25px;
+    margin-right: 10px;
 }
 
 .reviews .review-card .box p {
     color: var(--gray-1000);
     font-size: 14px;
+    margin-bottom: 0;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
 }
 
 .reviews .review-card .user-img {
@@ -361,10 +370,6 @@ padding: 0 25%;
     background-color: var(--green-p);
 }
 
-.reviews .slick-next, .slick-prev {
-    display: block !important;
-}
-
 @media (max-width: 767px) {
     .reviews .head-title h2 {
         font-size: 30px;
@@ -377,6 +382,22 @@ padding: 0 25%;
 
     .reviews .review-card .box p {
         font-size: 12px;
+        -webkit-line-clamp: 3;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+    }
+
+    .reviews .slick-next,
+    .reviews .slick-prev {
+        display: block !important;
+        z-index: 2;
+        width: 30px;
+        height: 33px;
+        transition: var(--transition);
+    }
+
+    .reviews .slick-next:hover, .reviews .slick-prev:hover {
+        opacity: 0.7;
     }
 
     .reviews .slick-next {
@@ -386,7 +407,7 @@ padding: 0 25%;
 
     .slick-prev {
     left: 20%;
-    top: 93%
+    top: 93%;
     }
 
     .reviews .slick-next:before, .reviews .slick-prev:before {
@@ -395,7 +416,7 @@ padding: 0 25%;
     }
 
     .slick-next:before {
-        font-family: "Font Awesome 5 Brands"; content: "\f061";
+        font-family: "Font Awesome 6 Brands"; content: "\f061";
         color: var(--white);
         background-color: var(--green-m);
     }

@@ -189,15 +189,15 @@
                 <div class="col-lg-6 mt-3 mt-lg-0">
                     <div class="d-flex gap-4 justify-content-center text-center">
                         <div class="counter-card">
-                            <div class="number">18</div>
+                            <div class="number counter-y">18</div>
                             <div class="desc">Years</div>
                         </div>
                         <div class="counter-card">
-                            <div class="number">50</div>
+                            <div class="number counter-c">50</div>
                             <div class="desc">Happy Clients</div>
                         </div>
                         <div class="counter-card">
-                            <div class="number">60</div>
+                            <div class="number counter-p">60</div>
                             <div class="desc">Projects</div>
                         </div>
 
@@ -207,7 +207,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="video">
         <video width="100%" height="100%" muted controls>
             <source src="images/video (2160p).mp4" type="video/mp4">
             Your browser does not support the video tag.
@@ -241,6 +241,9 @@
                     <div>
                         <a href="#"><img src="images/case-study-2.png" alt="img"></a>
                     </div>
+                    <div>
+                        <a href="#"><img src="images/case-study-1.png" alt="img"></a>
+                    </div>
                 </div>
                 <a class="d-md-none" href="#">View All Case Studies <i class="fa-solid fa-arrow-right ms-2"></i></a>
             </div>
@@ -256,7 +259,7 @@
         <div class="review-card-container d-flex">
             <div class="review-card">
                 <div class="box d-flex align-items-center">
-                    <img class="me-2" src="images/home-review-1.png" alt="img">
+                    <img src="images/home-review-1.png" alt="img">
                     <p>A visual guide could be a wireframe,
                     creative composition, or information
                     architecture. A device that enables
@@ -276,7 +279,7 @@
             </div>
             <div class="review-card">
                 <div class="box d-flex align-items-center">
-                    <img class="me-2" src="images/home-review-1.png" alt="img">
+                    <img src="images/home-review-1.png" alt="img">
                     <p>A visual guide could be a wireframe,
                     creative composition, or information
                     architecture. A device that enables
@@ -296,7 +299,7 @@
             </div>
             <div class="review-card">
                 <div class="box d-flex align-items-center">
-                    <img class="me-2" src="images/home-review-1.png" alt="img">
+                    <img src="images/home-review-1.png" alt="img">
                     <p>A visual guide could be a wireframe,
                     creative composition, or information
                     architecture. A device that enables
@@ -316,7 +319,7 @@
             </div>
             <div class="review-card">
                 <div class="box d-flex align-items-center">
-                    <img class="me-2" src="images/home-review-1.png" alt="img">
+                    <img src="images/home-review-1.png" alt="img">
                     <p>A visual guide could be a wireframe,
                     creative composition, or information
                     architecture. A device that enables
@@ -336,7 +339,7 @@
             </div>
             <div class="review-card">
                 <div class="box d-flex align-items-center">
-                    <img class="me-2" src="images/home-review-1.png" alt="img">
+                    <img src="images/home-review-1.png" alt="img">
                     <p>A visual guide could be a wireframe,
                     creative composition, or information
                     architecture. A device that enables
@@ -424,56 +427,16 @@
     <script src="vendor/jquery/jquery.js"></script>
     <script src="vendor/bootstrap-5.3.0-dist/js/bootstrap.js"></script>
     <script src="vendor/slick-carousel/js/slick.min.js"></script>
+    <script src="vendor/counter/countMe.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
     <script>
-        $(document).ready(function() {
-            $('.home-slider').slick({
-            autoplay: true,
-            speed: 800,
-            autoplaySpeed: 3000,
-            dots: false,
-            infinite: true,
-            fade: true,
-            cssEase: 'linear',
-        });
-
-       $('.case-study-slider').slick({
-        dots: true,
-        slidesToShow: 2.5,
-        slidesToScroll: 1,
-
-        responsive: [
-               {
-                   breakpoint: 767,
-                   settings: {
-                       slidesToShow: 1.5,
-                       dots: true
-                   }
-                }
-                ]
-        });
-
-        $('.review-card-container ').slick({
-                dots: true,
-                arrows: false,
-                centerMode: true,
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                centerPadding: '0',
-
-                responsive: [
-                {
-                    breakpoint: 767,
-                    settings: {
-                        arrows: true,
-                        dots: false,
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                    }
-                },
-            ]
-                
-            });
+        $(document).ready(function () {
+            // $(selector).countMe(delay,speed)
+            2
+            $(".counter-y").countMe(500, 65);
+            $(".counter-c").countMe(500, 65);
+            $(".counter-p").countMe(500, 65);
 
         });
     </script>
