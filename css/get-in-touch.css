@@ -1,0 +1,184 @@
+:root {
+    --black: #2E2D2D;
+    --basic: #1D1B1B;
+    --white: #FFFFFF;
+    --green-m: #079B94;
+    --green-p: #0FBCB3;
+    --grey: #8D8BA7;
+    --gray-text: #9795B5;
+    --gray-1000: #767494;
+    --gray-800: #ADABC3;
+    --gray-300:#F9F9FF;
+    --gray-500:#E7E6F2;
+    --radius: 8px;
+    --transition: 0.3s;
+}
+
+/* main-components */
+.main-title {
+    font-weight: 700;
+    font-size: 42px;
+}
+
+p {
+    color: var(--basic);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+@media (max-width: 767px) {
+     .get-in-touch .title p {
+        font-size: 14px;
+    }
+}
+
+/* get-in-touch-landing */
+.get-in-touch-landing img {
+    width: 100%;
+    margin-top: -13px;
+}
+
+.get-in-touch-landing .head-title {
+    color: var(--white);
+   bottom: 20%;
+}
+
+.get-in-touch-landing .head-title h2 {
+    font-weight: 700;
+    font-size: 46px;
+}
+
+.get-in-touch-landing .head-title h2 span {
+    font-size: 50px;
+}
+
+@media (max-width: 767px) {
+    .get-in-touch-landing .head-title h2 {
+        font-size: 24px;
+    }
+
+    .get-in-touch-landing .head-title h2 span {
+        font-size: 28px;
+    }
+}
+
+/* get-in-touch */
+.get-in-touch {
+    color: var(--basic);
+}
+
+.get-in-touch .contact {
+    padding: 0 10%;
+}
+
+.get-in-touch .middle {
+    border-left: 2px solid var(--basic);
+    border-right: 2px solid var(--basic);
+}
+
+.get-in-touch .contact-item {
+    text-align: center;
+    width: 35%;
+    height: 100px;
+}
+
+.get-in-touch .contact-item img {
+    height: 35px;
+}
+
+.get-in-touch .contact-item div {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+@media (max-width: 992px) {
+    .get-in-touch .contact {
+        padding: 0 5%;
+    }
+}
+
+@media (max-width: 767px) {
+    .get-in-touch .title h3 {
+        font-size: 28px;
+        color: var(--basic);
+        text-transform: uppercase;
+    }
+
+    .get-in-touch .title h3 span {
+        display: block;
+        color: var(--green-p);
+    }
+
+     .get-in-touch .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            height: auto;
+            width: auto;
+            text-align: start;
+            margin-bottom: 15px;
+    
+    }
+
+    .get-in-touch .middle {
+        border: none;
+    }
+    .get-in-touch .contact-item div {
+        margin: 0;
+    }
+
+    .get-in-touch .contact-item .img-holder {
+        width: 20px;
+    }
+
+     .get-in-touch .contact-item .img-holder img {
+        width: 100%;
+        object-fit: contain;
+        height: auto;
+    }
+
+    .get-in-touch .contact-item div {
+        font-size: 12px;
+    }
+}
+
+/* questions  */
+.questions {
+    background-image: url(../images/counter-bg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.questions input, .questions textarea {
+    width: 100%; 
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: #F2F1FA66;
+    border: 1px solid var(--white);
+    color: var(--black);
+}
+
+.questions input {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.questions input::placeholder {
+    color: var(--black);
+}
+
+.questions textarea {
+    resize: none;
+}
+
+
+
+
+footer p {
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 400;
+}
+

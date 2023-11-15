@@ -3,29 +3,25 @@ $(function(){
   let i=0;
   function change(){  
       ++i;
-      $($("main div")[i-1]).animate({width:"10%"},0.01).removeClass("a");
-      $($('.slide li')[i-1]).removeClass("b");
-      if(i==5){
+      $($("main .image")[i-1]).animate({width:"10%"},0.01).removeClass("a");
+      if(i==6){
           i=0;
       }
-      $($("main div")[i]).animate({width:"50%"}).addClass("a");
-      $($('.slide li')[i]).addClass("b");
+      $($("main .image")[i]).animate({width:"30%"}).addClass("a");
   }
   var a=setInterval(change,2000);
   
   let j=0;    
-  $('main div').click(function(){
+  $('main .image').click(function(){
       clearInterval(a);
       j=$(this).index();
-      if(j!=0 || j!=4){
+      if(j!=0 || j!=6){
           $('span').removeClass('c');
       }
       if($(this).hasClass("a")){}
       else{
-          $('main div').animate({width:"10%"},0.5).removeClass('a');
-          $('.slide li').removeClass('b');
-          $(this).animate({width:"50%"},200).addClass('a');
-          $( $('.slide li')[$(this).index()] ).addClass('b');
+          $('main .image').animate({width:"10%"},0.5).removeClass('a');
+          $(this).animate({width:"30%"},200).addClass('a');
       }
   });
   
@@ -33,29 +29,21 @@ $(function(){
       clearInterval(a);
       j=$('.a').index();
       if(j==0 && $(this).hasClass('prev')){
-          $($('main div')[0]).animate({width:"10%"},0.01).removeClass("a")
-          $($('.slide li')[0]).removeClass("b");
-          $($('main div')[4]).animate({width:"50%"},200).addClass("a")
-          $($('.slide li')[4]).addClass("b");
+          $($('main .image')[0]).animate({width:"10%"},0.01).removeClass("a")
+          $($('main .image')[6]).animate({width:"30%"},200).addClass("a")
       }
-      else if(j==4 && $(this).hasClass('next')){
-          $($('main div')[4]).animate({width:"10%"},0.01).removeClass("a")
-          $($('.slide li')[4]).removeClass("b");
-          $($('main div')[0]).animate({width:"50%"},200).addClass("a")
-          $($('.slide li')[0]).addClass("b");
+      else if(j==6 && $(this).hasClass('next')){
+          $($('main .image')[6]).animate({width:"10%"},0.01).removeClass("a")
+          $($('main .image')[0]).animate({width:"30%"},200).addClass("a")
       }
       else{
           if($(this).hasClass("prev")){
-              $($('main div')[j]).animate({width:"10%"},0.01).removeClass("a")
-              $($('.slide li')[j]).removeClass("b");
-              $($('main div')[j-1]).animate({width:"50%"},200).addClass("a")
-              $($('.slide li')[j-1]).addClass("b");
+              $($('main .image')[j]).animate({width:"10%"},0.01).removeClass("a")
+              $($('main .image')[j-1]).animate({width:"30%"},200).addClass("a")
           }
           else{
-              $($('main div')[j]).animate({width:"10%"},0.01).removeClass("a")
-              $($('.slide li')[j]).removeClass("b");
-              $($('main div')[j+1]).animate({width:"50%"},200).addClass("a")
-              $($('.slide li')[j+1]).addClass("b");
+              $($('main .image')[j]).animate({width:"10%"},0.01).removeClass("a")
+              $($('main .image')[j+1]).animate({width:"30%"},200).addClass("a")
           }
       }
           

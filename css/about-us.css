@@ -214,3 +214,35 @@
 
 }
 
+@media (max-width: 992px) {
+    .accordion-sec .head .top-title {
+        font-size: 28px;
+    }
+
+    .team .team-member {
+        margin-bottom: 20px;
+    }
+
+    .team .team-member img {
+        width: 100%;
+    }
+
+    .team .team-member .position {
+    color: var(--white);
+    bottom: 15px;
+    left: 20px;
+    }
+
+    .team .team-member .position h4 {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+
+    .team .team-member .position div {
+        font-size: 14px;
+    }
+}
+
+
+

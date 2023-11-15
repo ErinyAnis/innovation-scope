@@ -1,8 +1,20 @@
 
 
-span {
-  font-size: 2em;
+.accordion-sec .prev, .accordion-sec .next {
+  font-size: 27px;
   cursor: pointer;
+  position: absolute;
+}
+
+.accordion-sec .prev {
+ left: 3%;
+  bottom: 50%;
+}
+
+.accordion-sec .next {
+    right: 3%;
+    bottom: 50%;
+
 }
 
 main {
@@ -13,10 +25,52 @@ main {
   justify-content: space-between;
 }
 
+.accordion-sec main .image {
+  position: relative;
+      overflow: hidden;
+}
+
+.accordion-sec main .image img {
+  width: 100%;
+  height: 100%;
+  display: none;
+  transition: 0.3s;
+   object-fit: cover;
+}
+
+.accordion-sec main .title {
+   writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  text-align: center;
+     margin: 0 20px;
+     transition: 0.3s;
+}
+
+.accordion-sec main .image.a .title {
+    transform: rotate(270deg);
+    margin: 120px auto 5px auto;
+    position: absolute;
+    top: 8%;
+    left: 47%;
+    color: #ffffff;
+}
+
+.accordion-sec main .image.a img {
+  display: block;
+}
+
+.accordion-sec main .title h3 {
+  font-size: 20px;
+}
+
+.accordion-sec main .title div {
+  font-size: 14px;
+}
+
 main div {
   width: 10%;
-  height: 350px;
-  border-radius: 50px;
+  height: 420px;
+  border-radius: 30px;
   cursor: pointer;
 }
 
@@ -25,48 +79,22 @@ main div {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 30px;
 }
 
 .slide li {
-  padding: 10px;
-  border: 2px solid #1c1c1c;
+  padding: 7px;
+  border: 2px solid #2e2d2d;
   border-radius: 50%;
   margin-right: 0.8em;
 }
 
-.fived{
+.fived {
   margin-right: 0;
 }
 
-.a {
-  width: 50%;
-}
 
-.b {
-  background-color: #1c1c1c;
-}
-
-.c {
-  pointer-events: none;
-}
-
-
-.one {
-  background-color: #3d5a80;
-}
-
-.two {
-  background-color: #98c1d9;
-}
-
-.three {
-  background-color: #e0fbfc;
-}
-
-.four {
-  background-color: #ee6c4d;
-}
-
-.five {
-  background-color: #293241;
+.image {
+  background-color: #F2F1FA;
+  border: 1px solid #D4D2E3;
 }
