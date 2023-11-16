@@ -59,7 +59,6 @@ body {
 }
 
 /* form */
-
 .talk-to-expert form label {
     display: block;
     font-weight: 500;
@@ -77,7 +76,7 @@ body {
 }
 
 .talk-to-expert form input {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     width: 100%;
 }
 

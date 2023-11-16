@@ -162,7 +162,7 @@
 
 .questions input, .questions textarea {
     width: 100%; 
-    padding: 5px 10px;
+    padding: 8px 12px;
     font-size: 14px;
     border-radius: 5px;
     background-color: #F2F1FA66;
@@ -186,14 +186,20 @@
 
 .questions textarea {
     resize: none;
-    height: 127px;
+    height: 145px;
 }
 
 .questions form button {
     border-radius: var(--radius);
     padding: 7px 30px;
     font-size: 14px;
-    border: none;
+    border: 1px solid var(--white);
+    transition: var(--transition);
+}
+
+.questions form button:hover {
+    background-color: transparent;
+    color: var(--white);
 }
 
 /* Chrome, Safari, Edge, Opera */
