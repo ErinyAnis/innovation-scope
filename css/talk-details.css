@@ -1,0 +1,35 @@
+:root {
+  --black: #2e2d2d;
+  --basic: #1d1b1b;
+  --white: #ffffff;
+  --green-m: #079b94;
+  --green-p: #0fbcb3;
+  --grey: #8d8ba7;
+  --gray-text: #9795b5;
+  --gray-1000: #767494;
+  --gray-800: #adabc3;
+  --gray-300: #f9f9ff;
+  --gray-500: #e7e6f2;
+  --radius: 8px;
+  --transition: 0.3s;
+}
+
+.talk-details {
+  color: var(--basic);
+}
+
+.talk-details .head-title .date {
+  color: var(--gray-1000);
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.talk-details .head-title h4 {
+  font-weight: 700;
+  font-size: 34px;
+}
+
+.talk-details .head-title img {
+  max-width: 100%;
+  border-radius: var(--radius);
+}

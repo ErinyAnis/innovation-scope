@@ -20,17 +20,27 @@
     font-size: 42px;
 }
 
-p {
+@media (max-width: 992px) {
+    .main-title {
+        font-size: 28px;
+    }
+}
+
+.title p {
     color: var(--basic);
     font-weight: 500;
     font-size: 18px;
 }
 
 @media (max-width: 767px) {
-     .get-in-touch .title p {
+    .title p {
         font-size: 14px;
     }
 }
+
+
+
+
 
 /* get-in-touch-landing */
 .get-in-touch-landing img {
@@ -152,7 +162,7 @@ p {
 
 .questions input, .questions textarea {
     width: 100%; 
-    padding: 5px;
+    padding: 5px 10px;
     font-size: 14px;
     border-radius: 5px;
     background-color: #F2F1FA66;
@@ -165,20 +175,83 @@ p {
     margin-bottom: 15px;
 }
 
-.questions input::placeholder {
+.questions input::placeholder, .questions textarea::placeholder {
     color: var(--black);
+}
+
+.questions input:focus, .questions textarea:focus {
+    border: 1px solid var(--green-p);
+    outline: navy;
 }
 
 .questions textarea {
     resize: none;
+    height: 127px;
 }
 
-
-
-
-footer p {
-    color: var(--white);
+.questions form button {
+    border-radius: var(--radius);
+    padding: 7px 30px;
     font-size: 14px;
-    font-weight: 400;
+    border: none;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@media (max-width: 767px) {
+    .questions input, .questions textarea {
+        font-size: 12px;
+    }
+
+    .questions form button {
+        width: 100%;
+    }
+}
+
+/* connect-with-us */
+.connect-with-us .social-links a {
+    color: var(--black);
+    padding: 6px 10px;
+    background-color: #43404033;
+    margin: 5px;
+    border-radius: 10px;
+    width: 35px;
+    text-align: center;
+    font-size: 14px;
+    transition: var(--transition);
+}
+
+.connect-with-us .social-links a:hover {
+    color: var(--green-m);
+}
+
+@media (max-width: 767px) {
+    .connect-with-us .social-links a {
+    padding: 5px;
+    margin: 5px;
+    width: 30px;
+    font-size: 12px;
+    }
+}
+
+/* map */
+.map iframe {
+    width: 100%;
+    height: 400px;
+}
+
+@media (max-width: 767px) {
+    .map iframe {
+      height: 250px;  
+    }
+}

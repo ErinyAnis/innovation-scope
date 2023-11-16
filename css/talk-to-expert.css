@@ -1,0 +1,313 @@
+:root {
+    --black: #2E2D2D;
+    --basic: #1D1B1B;
+    --white: #FFFFFF;
+    --green-m: #079B94;
+    --green-p: #0FBCB3;
+    --grey: #8D8BA7;
+    --gray-text: #9795B5;
+    --gray-1000: #767494;
+    --gray-800: #ADABC3;
+    --gray-300:#F9F9FF;
+    --gray-500:#E7E6F2;
+    --radius: 8px;
+    --transition: 0.3s;
+}
+
+body {
+    background-color: var(--black);
+}
+
+/* head */
+.talk-to-expert h2 {
+  font-weight: 700;
+  font-size: 60px;
+}
+
+.talk-to-expert h3 {
+  color: var(--green-p);
+  opacity: 0.5;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.talk-to-expert .line {
+  width: 73px;
+  height: 4px;
+  background-color: var(--green-p);
+  opacity: 0.5;
+  margin: 0 15px 0 40px;
+}
+
+.talk-to-expert h4 {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.talk-to-expert .links a {
+    border: 1px solid var(--white);
+    padding: 7px 22px;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: var(--transition);
+}
+
+.talk-to-expert .links a:hover {
+    border: 1px solid var(--green-p);
+    color: var(--green-p);
+}
+
+/* form */
+
+.talk-to-expert form label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.talk-to-expert form input, .talk-to-expert form textarea {
+    padding: 4px 10px;
+}
+
+.talk-to-expert form textarea {
+    resize: none;
+    width: 100%;
+    height: 80px;
+}
+
+.talk-to-expert form input {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.talk-to-expert form input, .talk-to-expert form input::placeholder, .talk-to-expert form textarea,  .talk-to-expert form textarea::placeholder {
+    color: var(--black);
+    font-size: 14px;
+}
+
+.talk-to-expert form input, .talk-to-expert form textarea {
+    border: 2px solid var(--white);
+    background-color: #F2F1FA66;
+    border-radius: 5px;
+}
+
+.talk-to-expert form input:focus, .talk-to-expert form textarea:focus {
+    outline: none;
+}
+
+.talk-to-expert form button {
+    color: var(--white);
+    background-color: var(--green-m);
+    font-weight: 500;
+    padding: 5px 22px;
+    border-radius: var(--radius);
+    transition: var(--transition);
+    border: 1px solid var(--green-m);
+}
+
+.talk-to-expert form button:hover {
+    border: 1px solid var(--white);
+    background-color: transparent;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* side-content */
+.talk-to-expert .side-content h5 {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.talk-to-expert .side-content ul {
+    list-style: disc;
+    padding-left: 18px;
+}
+
+.talk-to-expert .side-content p, .talk-to-expert .side-content ul li {
+    font-size: 18px;
+}
+
+.talk-to-expert .side-content .social-links a {
+    padding: 5px;
+    margin: 0 5px;
+    background-color: #FFFFFF33;
+    width: 32px;
+    text-align: center;
+    border-radius: var(--radius);
+    display: inline-block;
+}
+
+.talk-to-expert .side-content .social-links a:hover {
+    color: var(--green-m);
+}
+
+@media (max-width: 992px) {
+    .talk-to-expert h2 {
+        font-size: 36px;
+    }
+
+    .talk-to-expert h3 {
+        font-size: 28px;
+        margin-bottom: 0;
+    }
+
+    .talk-to-expert .line {
+        width: 49px;
+        height: 3px;
+        margin: 0 8px 0 35px;
+    }
+
+    .talk-to-expert h4 {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .talk-to-expert .links {
+        white-space: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; 
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        
+    }
+
+    .talk-to-expert .links::-webkit-scrollbar {
+  display: none; }
+
+    .talk-to-expert .links a {
+        font-size: 12px;
+    }
+
+    .talk-to-expert .side-content h5 {
+        font-size: 18px;
+    }
+
+    .talk-to-expert .side-content p, .talk-to-expert .side-content ul li {
+        font-size: 14px;
+    }
+
+    .talk-to-expert form label {
+        font-size: 14px;
+    }
+
+    .talk-to-expert form button {
+        font-size: 14px;
+    }
+    
+}
+
+/* ------------------------------------------------*/
+/* clients */
+.clients h3 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.clients h3 span {
+    font-size: 52px;
+}
+
+.clients p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.clients .images-container {
+    width: 18%;
+}
+
+.clients .images-container img {
+    max-width: 100%;
+}
+
+@media (max-width: 992px) {
+   .clients h3 {
+    font-size: 30px;
+   } 
+
+   .clients h3 span {
+    font-size: 30px;
+    }
+
+    .clients .images-container {
+        width: 30%;
+    }
+
+    .clients p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    .clients .images-container {
+        width: 45%;
+    }
+}
+
+/* ------------------------------------------- */
+/* talks */
+.talks h4 {
+    font-weight: 600;
+    font-size: 60px;
+}
+
+.talks .talk-card {
+    margin-bottom: 10px;
+}
+
+.talks .talk-card .main-img {
+    width: 100%;
+    border-radius: var(--radius);
+}
+
+.talks .talk-card .head-title {
+    font-weight: 600;
+    margin-top: 10px;
+    color: var(--gray-800);
+}
+
+.talks .talk-card h5 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.talks .talk-card .arrow-icon {
+    height: 30px;
+}
+
+.talks .view-more {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.talks .view-more:hover {
+    color: var(--green-m);
+}
+
+@media (max-width: 767px) {
+    .talks h4 {
+        font-size: 46px
+    }
+
+    .talks .talk-card .head-title {
+        font-size: 14px;
+    }
+
+    .talks .talk-card h5 {
+        font-size: 18px;
+    }
+
+    .talks .talk-card .arrow-icon {
+        height: 25px;
+    }
+}
