@@ -1,0 +1,121 @@
+:root {
+  --black: #2e2d2d;
+  --white: #ffffff;
+  --green-m: #079b94;
+  --green-p: #0fbcb3;
+  --gray-200: #FAFAFF;
+--gray-text: #9795B5;
+  --radius: 8px;
+  --transition: 0.3s;
+}
+
+.case-studies {
+    color: var(--black);
+}
+
+.case-studies .title h3 {
+    font-weight: 700;
+    font-size: 60px;
+    margin-bottom: 0;
+}
+
+.case-studies .title p {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.case-studies .card-holder {
+    padding: 0 10px;
+}
+
+.case-studies .card-holder img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.case-studies .card-holder h4 {
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 0;
+}
+
+.case-studies .card-holder .desc {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+@media (max-width: 767px) {
+    .case-studies .title h3 {
+        font-size: 34px;
+    }
+
+    .case-studies .card-holder {
+    margin-bottom: 15px;
+    }
+
+    .case-studies .card-holder h4 {
+        font-size: 28px;
+    }
+
+    .case-studies .card-holder .desc {
+        font-weight: 400;
+        color: var(--gray-text);
+        font-size: 16px;
+    }
+
+}
+
+
+.gallery{
+    padding-bottom: 100px;
+}
+
+.gallery .controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.gallery .controls .buttons{
+    font-size: 18px;
+    line-height: 40px;
+    cursor: pointer;
+    margin:0 20px;
+    text-align: center;
+    font-weight: 700;
+    border-bottom: 3px solid transparent;
+}
+
+.gallery .controls .buttons.active{
+    border-bottom: 3px solid var(--green-p);
+}
+
+.gallery .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery .image-container .card-holder h4, .gallery .image-container .card-holder div {
+    color: var(--black);
+}
+
+.gallery .image-container .image {
+    width: 30%;
+}
+
+
+.gallery .image-container .image img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+
+
+

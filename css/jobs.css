@@ -1,0 +1,195 @@
+:root {
+  --black: #2e2d2d;
+  --white: #ffffff;
+  --green-m: #079b94;
+  --green-p: #0fbcb3;
+  --gray-200: #FAFAFF;
+  --radius: 8px;
+  --transition: 0.3s;
+}
+
+.jobs {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.jobs h2 {
+    font-weight: 700;
+    font-size: 56px;
+}
+
+/* form */
+.jobs form label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+
+.jobs form input, .jobs form input::placeholder {
+    color: var(--black);
+    font-size: 14px;
+}
+
+.jobs form input {
+    border: 2px solid var(--white);
+    background-color: #F2F1FA66;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    width: 100%;
+    height: 42px;
+    padding: 5px 10px;
+}
+
+.jobs form input:focus{
+    outline: none;
+}
+
+.jobs form button {
+    color: var(--white);
+    background-color: var(--green-m);
+    font-weight: 500;
+    padding: 5px 55px;
+    border-radius: var(--radius);
+    transition: var(--transition);
+    border: 1px solid var(--green-m);
+}
+
+.jobs form button:hover {
+    border: 1px solid var(--white);
+    background-color: transparent;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.jobs form input[type="file"]::file-selector-button {
+  padding: 3px 5px;
+  border: thin solid var(--gray-200);
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+/* end-form */
+
+@media (max-width: 992px) {
+    .jobs h2 {
+        font-size: 46px;
+    }
+}
+
+@media (max-width: 767px) {
+   .jobs h2 {
+        font-size: 30px;
+    }
+
+    .jobs form label {
+        font-size: 14px;
+    }
+
+    .jobs form input, .jobs form input::placeholder {
+        font-size: 12px;
+    }
+
+    .jobs form input[type="file"]::file-selector-button {
+        font-size: 12px;
+    }
+
+    .jobs form input {
+        height: 40px;
+    }
+}
+
+/* select-input */
+
+.select-hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.rev-select {
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+ height: 42px;
+  border: 2px solid var(--white);
+    background-color: #F2F1FA66;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    padding: 5px 10px;
+    color: var(--black);
+    font-size: 14px;
+   
+}
+.select-styled {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 8px 10px;
+   font-size: 14px;
+}
+
+.select-styled::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: var(--black) transparent transparent transparent;
+  position: absolute;
+  top: 16px;
+  right: 10px;
+}
+
+.select-styled.active::after {
+  top: 9px;
+  border-color: transparent transparent var(--black) transparent;
+}
+
+.select-options {
+ display: none;
+    position: absolute;
+    top: 96%;
+    right: -1.5px;
+    left: -1.5px;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #979797;
+    border: 2px solid var(--white);
+    border-radius: 0 0 5px 5px;
+    color: var(--white);
+}
+
+.select-options li {
+  margin: 0;
+  padding: 12px 0;
+  text-indent: 15px; 
+}
+
+.select-options li:hover {
+  color: var(--black);
+  background: #F2F1FA66;
+}
+
+.select-options li[rel="hide"] {
+  display: none;
+}
+
+@media (max-width: 767px) {
+.select-styled {
+    font-size: 12px !important;
+    padding: 10px !important;
+}
+}

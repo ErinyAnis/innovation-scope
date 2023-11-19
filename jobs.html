@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="vendor/font-awesome/css/all.min.css">
     <link rel="stylesheet" href="vendor/bootstrap-5.3.0-dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/talk-to-expert.css">
-    <title>Talks | Innovation Scope</title>
+    <link rel="stylesheet" href="css/jobs.css">
+    <title>Jobs | Innovation Scope</title>
 </head>
 
 <body>
@@ -105,8 +105,8 @@
                 <li><a class="nav-link" href="case-studies.html">Case Studies</a></li>
                 <li><a class="nav-link" href="clients.html">Clients</a></li>
                 <li><a class="nav-link" href="about.html">About</a></li>
-                <li><a class="nav-link active" href="talks.html">Talks</a></li>
-                <li><a class="nav-link" href="jobs.html">Jobs</a></li>
+                <li><a class="nav-link" href="talks.html">Talks</a></li>
+                <li><a class="nav-link active" href="jobs.html">Jobs</a></li>
                 <li class="me-lg-auto"><a class="nav-link" href="get-in-touch.html">Get in Touch</a></li>
                 <li>
                     <a class="nav-btn" href="talk-to-expert.html">Talk to Expert</a>
@@ -115,52 +115,100 @@
         </nav>
     </header>
 
-    <section class="talks section-padding container">
-        <h4>Talks</h4>
-        <div class="row">
-            <div class="col-md-6 mb-4">
-                <a href="talk-details.html" class="talk-card">
-                    <img class="main-img" src="images/talks-img.png" alt="">
-                    <div class="head-title">Demi WIlkinson • 16 Jan 2022</div>
-                    <div class="d-flex justify-content-between">
-                        <h5>PM mental models</h5>
-                        <img class="arrow-icon" src="images/arrow-up-right.png" alt="arrow-icon">
+    <section class="jobs">
+        <div class="section-padding container">
+            <h2 class="mb-3">Please Fill The Next Form.</h2>
+            <form action="">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="full-name">Full Name*</label>
+                        <input type="text" name="full_name" id="full-name" placeholder="Your Name" required>
                     </div>
-                </a>
-            </div>
-            <div class="col-md-6 mb-4">
-                <a href="talk-details.html" class="talk-card">
-                    <img class="main-img" src="images/talks-img.png" alt="">
-                    <div class="head-title">Demi WIlkinson • 16 Jan 2022</div>
-                    <div class="d-flex justify-content-between">
-                        <h5>PM mental models</h5>
-                        <img class="arrow-icon" src="images/arrow-up-right.png" alt="arrow-icon">
+                    <div class="col-md-6">
+                        <label for="upload-cv">Upload Cv</label>
+                        <input type="file" name="upload_cv" id="upload-cv" placeholder="No file choosen" required>
                     </div>
-                </a>
-            </div>
-            <div class="col-md-6 mb-4">
-                <a href="talk-details.html" class="talk-card">
-                    <img class="main-img" src="images/talks-img.png" alt="">
-                    <div class="head-title">Demi WIlkinson • 16 Jan 2022</div>
-                    <div class="d-flex justify-content-between">
-                        <h5>PM mental models</h5>
-                        <img class="arrow-icon" src="images/arrow-up-right.png" alt="arrow-icon">
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="phone">Phone number*</label>
+                        <input type="number" name="phone" id="phone" placeholder="Enter your phone number" required>
                     </div>
-                </a>
-            </div>
-            <div class="col-md-6 mb-4">
-                <a href="#" class="talk-card">
-                    <img class="main-img" src="images/talks-img.png" alt="">
-                    <div class="head-title">Demi WIlkinson • 16 Jan 2022</div>
-                    <div class="d-flex justify-content-between">
-                        <h5>PM mental models</h5>
-                        <img class="arrow-icon" src="images/arrow-up-right.png" alt="arrow-icon">
+                    <div class="col-md-6">
+                        <label>Position</label>
+                        <div class="rev-select">
+                            <select class="rev-select-box select-hidden">
+                                <option value="hide">Please choose an option</option>
+                                <option value="UI/UX Designer">UI/UX Designer</option>
+                                <option value="Front-End Developer">Front-End Developer</option>
+                                <option value="Back-End Developer">Back-End Developer</option>
+                                <option value="Mobile App Developer">Mobile App Developer</option>
+                                <option value="Content Creator">Content Creator</option>
+                            </select>
+                            <div class="select-styled">Please choose an option</div>
+                            <ul class="select-options" style="display: none;">
+                                <li rel="hide">Please choose an option</li>
+                                <li rel="UI/UX Designer">UI/UX Designer</li>
+                                <li rel="Front-End Developer">Front-End Developer</li>
+                                <li rel="Back-End Developer">Back-End Developer</li>
+                                <li rel="Mobile App Developer">Mobile App Developer</li>
+                                <li rel="Content Creator">Content Creator</li>
+                            </ul>
+                        </div>
                     </div>
-                </a>
-            </div>
-            <div class="d-md-none text-center">
-                <a class="view-more" href="#">View More <i class="fa-solid fa-arrow-right ms-2"></i></a>
-            </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="email">Email*</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label>How did you hear about us?</label>
+                        <div class="rev-select">
+                            <select class="rev-select-box select-hidden">
+                                <option value="hide">Please choose an option</option>
+                                <option value="linked-in">LinkedIn</option>
+                                <option value="facebook">Facebook</option>
+                                <option value="behance">Behance</option>
+                                <option value="pinterest">Pinterest</option>
+                            </select>
+                            <div class="select-styled">Please choose an option</div>
+                            <ul class="select-options" style="display: none;">
+                                <li rel="hide">Please choose an option</li>
+                                <li rel="linked-in">LinkedIn</li>
+                                <li rel="facebook">Facebook</li>
+                                <li rel="behance">Behance</li>
+                                <li rel="pinterest">Pinterest</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="email">LinkedIn/Website</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="hear">How do you like to meet?</label>
+                        <div class="rev-select">
+                            <select class="rev-select-box select-hidden">
+                                <option value="hide">Please choose an option</option>
+                                <option value="online meeting">Online Meeting</option>
+                                <option value="offline">Offline</option>
+                            </select>
+                            <div class="select-styled">Please choose an option</div>
+                            <ul class="select-options" style="display: none;">
+                                <li rel="hide">Please choose an option</li>
+                                <li rel="online meeting">Online Meeting</li>
+                                <li rel="offline">Offline</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-3">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
         </div>
     </section>
 
@@ -228,6 +276,8 @@
 
     <script src="vendor/jquery/jquery.js"></script>
     <script src="vendor/bootstrap-5.3.0-dist/js/bootstrap.js"></script>
+    <script src="js/custom-selectbox.js"></script>
+
     <script>
         $(document).ready(function () {
             $(window).on('scroll', function () {

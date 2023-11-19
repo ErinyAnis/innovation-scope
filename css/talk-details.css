@@ -24,7 +24,7 @@
   margin-bottom: 3px;
 }
 
-.talk-details .head-title h4 {
+.talk-details h4 {
   font-weight: 700;
   font-size: 34px;
 }
@@ -32,4 +32,116 @@
 .talk-details .head-title img {
   max-width: 100%;
   border-radius: var(--radius);
+}
+
+.talk-details .info h5 {
+  font-weight: 600;
+  font-size: 26px;
+  margin-bottom: 4px;
+}
+
+.talk-details .info p {
+  margin-bottom: 20px;
+}
+
+.talk-details .talk-card {
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.talk-details .talk-card .main-img {
+    width: 100%;
+    border-radius: var(--radius);
+}
+
+.talk-details .talk-card .head-title {
+    font-weight: 600;
+    margin-top: 10px;
+    color: var(--gray-800);
+}
+
+.talk-details .talk-card h5 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--basic);
+}
+
+.talk-details .talk-card .arrow-icon {
+    height: 30px;
+}
+
+.talk-details .view-more {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.talk-details .view-more:hover {
+    color: var(--green-m);
+}
+
+.slick-dots li button:before {
+  background-color: var(--gray-500);
+}
+
+.talk-details .slick-dots {
+  margin-top: 10px;
+}
+
+.talk-details .view-more a {
+  color: var(--basic);
+  font-size: 14px;
+  transition: var(--transition);
+}
+
+.talk-details .view-more a:hover {
+  color: var(--green-m);
+}
+
+
+@media (max-width: 767px) {
+  .talk-details .head-title .date {
+    font-size: 14px;
+  }
+
+  .talk-details h4 {
+    font-size: 24px;
+  }
+
+  .talk-details .info h5 {
+    font-size: 18px;
+  }
+
+  .talk-details .info p {
+    font-size: 14px;
+  }
+
+  .talk-details .talks .talk-card .head-title {
+        font-size: 14px;
+    }
+
+    .talk-details .talks .talk-card h5 {
+        font-size: 18px;
+    }
+
+    .talk-details .talks .talk-card .arrow-icon {
+        height: 25px;
+    }
+
+    .talk-details .talk-card {
+      padding: 0;
+    }
+
+    .talk-details .talk-card .arrow-icon {
+      height: 25px;
+    }
+}
+
+@media (max-width: 992px) {
+  .talk-details .talk-card .head-title {
+        font-size: 14px;
+  }
+
+  .talk-details .talk-card h5 {
+    font-size: 18px;
+  }
 }

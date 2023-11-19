@@ -121,6 +121,7 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+/* end-form */
 
 /* side-content */
 .talk-to-expert .side-content h5 {
