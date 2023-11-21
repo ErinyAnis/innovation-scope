@@ -148,7 +148,7 @@
                     <img class="main-img" src="images/home-about-us.png" alt="about-us">
                 </div>
                 <div class="col-lg-7 col-xl-8 section-padding">
-                    <h2 class="primary-color mb-2">KNOW WHO YOU DEAL WITH.</h2>
+                    <h2 class="primary-color mb-2 faded-sentence">KNOW WHO YOU DEAL WITH.</h2>
                     <h3>OUR JOURNEY STARTED SINCE 2006.</h3>
                     <p>We believe that our job is not about designing a website or just coding,
                     we design your dreams in detail to make them real.</p>
@@ -226,7 +226,7 @@
                     Maecenas nunc facilisis sagittis odio. Iaculis enim scelerisque
                     lectus ultrices. Eu gravida eros montes ac lacus tellus est.
                     Odio eget suspendisse morbi phasellus.</p>
-                    <a class="d-none d-md-block" href="#">View All Case Studies</a>
+                    <a class="d-none d-lg-block" href="#">View All Case Studies</a>
                 </div>
                 <div class="col-lg-7 case-study-slider">
                     <div>
@@ -245,7 +245,7 @@
                         <a href="#"><img src="images/case-study-1.png" alt="img"></a>
                     </div>
                 </div>
-                <a class="d-md-none" href="#">View All Case Studies <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                <a class="d-lg-none" href="#">View All Case Studies <i class="fa-solid fa-arrow-right ms-2"></i></a>
             </div>
         </div>
     </section>
@@ -429,23 +429,8 @@
     <script src="vendor/slick-carousel/js/slick.min.js"></script>
     <script src="vendor/counter/countMe.min.js"></script>
     <script src="js/slider.js"></script>
-    <script>
-        $(document).ready(function () {
-            $(window).on('scroll', function () {
-                var scroll = $(window).scrollTop();
-                if (scroll >= 50) {
-                    $("nav").addClass("fixed-top");
-                } else {
-                    $("nav").removeClass("fixed-top");
-                }
-            });
-
-            // $(selector).countMe(delay,speed)
-            $(".counter-y").countMe(500, 65);
-            $(".counter-c").countMe(500, 65);
-            $(".counter-p").countMe(500, 65);
-        });
-    </script>
+    <script src="js/main.js"></script>
+    <script src="js/word-by-word-fade.js"></script>
     </script>
     </body>
     </html>
