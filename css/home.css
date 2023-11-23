@@ -10,8 +10,8 @@
     --gray-text: #9795B5;
     --gray-1000: #767494;
     --gray-800: #ADABC3;
-    --gray-300:#F9F9FF;
-    --gray-500:#E7E6F2;
+    --gray-300: #F9F9FF;
+    --gray-500: #E7E6F2;
     --radius: 8px;
     --transition: 0.3s;
 }
@@ -25,6 +25,7 @@
 .landing-page img {
     max-width: 100%;
 }
+
 .landing-page .landing-content {
     top: 50%;
     left: 50%;
@@ -52,6 +53,16 @@
     }
 }
 
+@media (max-width: 767px) {
+    .landing-page img {
+        height: 260px;
+        object-fit: cover;
+    }
+    .landing-page .landing-content {
+        top: 58%;
+    }
+}
+
 /* about-us  */
 .about-us {
     background-color: var(--black);
@@ -67,7 +78,7 @@
 
 .about-us h2 {
     font-weight: 700;
-    font-size: 40px;
+    font-size: 36px;
 }
 
 .about-us h3 {
@@ -90,7 +101,7 @@
 }
 
 .about-us ul li:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .about-us .arrow {
@@ -98,16 +109,15 @@
     margin-right: 10px;
 }
 
- .about-us .section-padding {
-    padding: 55px 25px;
+.about-us .sec-p {
+    padding: 30px 0;
 }
 
-@media (max-width: 1200px) {
-     .about-us .section-padding {
-        padding: 30px 20px;;
-     }
+@media (max-width: 767px) {
+    .about-us .sec-p {
+       padding: 40px 20px;
+    }
 }
-
 
 @media (max-width: 992px) {
     .about-us {
@@ -116,7 +126,7 @@
         font-weight: 500;
     }
 
-   
+
     .about-us h2 {
         font-size: 28px;
     }
@@ -133,18 +143,30 @@
 }
 
 /* counter */
+.counter .counter-padding {
+    padding: 85px 35px;
+}
+
 .counter {
     background-image: url(../images/counter-bg.png);
     background-position: center;
 }
 
 .counter h2 {
-    font-weight: 700;
-    font-size: 40px;
+    font-weight: 800;
+    font-size: 46px;
+    color: var(--basic);
+    margin-bottom: 0;
 }
 
-.counter h2 span {
-    color: var(--basic);
+.counter h3 {
+     font-weight: 700;
+     font-size: 36px;
+     color: var(--basic);
+}
+
+.counter h3 span {
+    color: var(--white);
 }
 
 .counter p {
@@ -155,29 +177,25 @@
 .counter .counter-card {
     border: 1px solid var(--white);
     border-radius: 11px;
-    padding: 15px;
+    padding: 22px 10px;
     width: 120px;
     background: linear-gradient(180deg, rgb(28 58 58) 0%, #2b4947d4 18%, #0FBCB3 100%);
 }
 
 .counter .counter-card .number {
-    font-size: 35px;
+    font-size: 38px;
     font-weight: 700;
 }
 
 .counter .counter-card .desc {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 @media (max-width: 992px) {
-    .counter h2 {
-        font-size: 28px;
-    }
-
     .counter .counter-card {
         width: 100px;
-        padding: 10px;
+        padding: 20px 10px;
     }
 
     .counter .counter-card .number {
@@ -187,17 +205,35 @@
     .counter .counter-card .desc {
         font-size: 12px;
     }
+
+    .counter .counter-padding {
+        padding: 40px 20px;
+    }
 }
 
 @media (max-width: 767px) {
     .counter p {
         font-size: 14px;
     }
+
+    .counter h2 {
+        font-size: 34px;
+    }
+
+    .counter h3 {
+        font-size: 20px;
+    }
 }
 
 /* video */
 .video {
-    margin-bottom: -8px;
+    background-image: url(../images/video-bg.png);
+    background-position: 6% 30%;
+    object-fit: cover;
+}
+
+.video video {
+    width: 80%;
 }
 
 /* case-studies */
@@ -205,13 +241,13 @@
 
 /* reviews */
 .reviews .head-title h2 {
-font-weight: 700;
-font-size: 40px;
+    font-weight: 700;
+    font-size: 40px;
 }
 
 .reviews .head-title div {
-color: var(--gray-text);
-padding: 0 25%;
+    color: var(--gray-text);
+    padding: 0 25%;
 }
 
 .reviews .review-card {
@@ -246,6 +282,7 @@ padding: 0 25%;
     -webkit-line-clamp: 4;
     display: -webkit-box;
     -webkit-box-orient: vertical;
+    font-weight: 500;
 }
 
 .reviews .review-card .user-img {
@@ -283,11 +320,11 @@ padding: 0 25%;
     font-size: 14px;
 }
 
-.reviews  .slick-dots li button:before {
+.reviews .slick-dots li button:before {
     background-color: var(--gray-500);
 }
 
-.reviews .slick-dots li.slick-active button:before  {
+.reviews .slick-dots li.slick-active button:before {
     background-color: var(--green-p);
 }
 
@@ -299,6 +336,7 @@ padding: 0 25%;
 
     .reviews .head-title div {
         font-size: 14px;
+        padding: 0 10px;
     }
 
     .reviews .review-card .box p {
@@ -307,32 +345,136 @@ padding: 0 25%;
         display: -webkit-box;
         -webkit-box-orient: vertical;
     }
+    .reviews .slick-dots li button:before {
+        width: 50px;
+    }
+    .slick-dots li {
+    width: 54px;
+    }
 
-    .reviews .slick-next,
-    .reviews .slick-prev {
-        display: block !important;
-        z-index: 2;
-        width: 25px;
+}
+
+/* talks */
+.talks {
+  color: var(--basic);
+}
+
+.talks .head-title .date {
+  color: var(--gray-1000);
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.talks h4 {
+  font-weight: 700;
+  font-size: 34px;
+}
+
+.talks .head-title img {
+  max-width: 100%;
+  border-radius: var(--radius);
+}
+
+.talks .info h5 {
+  font-weight: 600;
+  font-size: 26px;
+  margin-bottom: 4px;
+}
+
+.talks .info p {
+  margin-bottom: 20px;
+}
+
+.talks .talk-card {
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.talks .talk-card .main-img {
+    width: 100%;
+    border-radius: var(--radius);
+}
+
+.talks .talk-card .head-title {
+    font-weight: 600;
+    margin-top: 10px;
+    color: var(--gray-800);
+}
+
+.talks .talk-card h5 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--basic);
+}
+
+.talks .talk-card .arrow-icon {
+    height: 30px;
+}
+
+.talks .view-more {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.talks .view-more:hover {
+    color: var(--green-m);
+}
+
+.talks .view-more a {
+  color: var(--basic);
+  font-size: 14px;
+  transition: var(--transition);
+}
+
+.talks .view-more a:hover {
+  color: var(--green-m);
+}
+
+
+@media (max-width: 767px) {
+  .talks .head-title .date {
+    font-size: 14px;
+  }
+
+  .talks h4 {
+    font-size: 24px;
+  }
+
+  .talks .info h5 {
+    font-size: 18px;
+  }
+
+  .talks .info p {
+    font-size: 14px;
+  }
+
+  .talks .talks .talk-card .head-title {
+        font-size: 14px;
+    }
+
+    .talks .talks .talk-card h5 {
+        font-size: 18px;
+    }
+
+    .talks .talks .talk-card .arrow-icon {
         height: 25px;
-        transition: var(--transition);
     }
 
-    .reviews .slick-next:hover, .reviews .slick-prev:hover {
-        opacity: 0.7;
+    .talks .talk-card {
+      padding: 0;
     }
 
-    .reviews .slick-next {
-    right: 20%;
-    top: 93%;
+    .talks .talk-card .arrow-icon {
+      height: 25px;
     }
+}
 
-    .slick-prev {
-    left: 20%;
-    top: 93%;
-    }
+@media (max-width: 992px) {
+  .talks .talk-card .head-title {
+        font-size: 14px;
+  }
 
-    .reviews .slick-next:before, .reviews .slick-prev:before {
-        z-index: 2;
-    }
-
+  .talk-details .talk-card h5 {
+    font-size: 18px;
+  }
 }

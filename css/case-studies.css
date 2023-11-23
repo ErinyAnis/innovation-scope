@@ -192,11 +192,17 @@
 .case-studies-details .side-info .cat-name {
     color: var(--black);
     font-weight: 500;
-    border: 1px solid var(--green-p);
-    background-color: #0FBCB326;
+    border: 1px solid;
     border-radius: var(--radius);
     margin-right: 10px;
-    padding: 4px 8px;
+    padding: 5px 10px;
+    transition: var(--transition);
+}
+
+.case-studies-details .side-info .cat-name:hover {
+    background-color: var(--green-p);
+    color: var(--white);
+    border: 1px solid var(--green-p);
 }
 
 .case-studies-details .side-info ul {
@@ -389,6 +395,7 @@
 .images img {
     width: 100%;
     border-radius: 10px;
+    margin-bottom: 15px;
 }
 
 .talk-to-expert .head {

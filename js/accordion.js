@@ -4,7 +4,7 @@ $(function(){
   function change(){  
       ++i;
       $($("main .image")[i-1]).animate({width:"10%"},0.01).removeClass("a");
-      if(i==6){
+      if(i==7){
           i=0;
       }
       $($("main .image")[i]).animate({width:"30%"}).addClass("a");
@@ -15,7 +15,7 @@ $(function(){
   $('main .image').click(function(){
       clearInterval(a);
       j=$(this).index();
-      if(j!=0 || j!=6){
+      if(j!=0 || j!=7){
           $('span').removeClass('c');
       }
       if($(this).hasClass("a")){}

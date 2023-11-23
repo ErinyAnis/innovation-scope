@@ -55,14 +55,18 @@
 
 .get-in-touch-landing .head-title h2 {
     font-weight: 700;
-    font-size: 46px;
+    font-size: 60px;
 }
 
 .get-in-touch-landing .head-title h2 span {
-    font-size: 50px;
+    font-size: 70px;
 }
 
 @media (max-width: 767px) {
+    .get-in-touch-landing .head-title {
+        bottom: 14%;
+    }
+
     .get-in-touch-landing .head-title h2 {
         font-size: 24px;
     }
@@ -109,6 +113,11 @@
 }
 
 @media (max-width: 767px) {
+    .get-in-touch-landing img {
+        height: 240px;
+        object-fit: cover;
+    }
+
     .get-in-touch .title h3 {
         font-size: 28px;
         color: var(--basic);
@@ -120,16 +129,16 @@
         color: var(--green-p);
     }
 
-     .get-in-touch .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            height: auto;
-            width: auto;
-            text-align: start;
-            margin-bottom: 15px;
-    
+    .get-in-touch .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        height: auto;
+        width: auto;
+        text-align: start;
+        margin-bottom: 15px;
     }
+   
 
     .get-in-touch .middle {
         border: none;
@@ -231,9 +240,9 @@ input[type=number] {
     background-color: #43404033;
     margin: 5px;
     border-radius: 10px;
-    width: 35px;
+    width: 40px;
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
     transition: var(--transition);
 }
 
@@ -243,10 +252,10 @@ input[type=number] {
 
 @media (max-width: 767px) {
     .connect-with-us .social-links a {
-    padding: 5px;
-    margin: 5px;
-    width: 30px;
-    font-size: 12px;
+        padding: 5px;
+        margin: 4px;
+        width: 32px;
+        font-size: 16px;
     }
 }
 
@@ -254,6 +263,7 @@ input[type=number] {
 .map iframe {
     width: 100%;
     height: 400px;
+    margin-bottom: -7px;
 }
 
 @media (max-width: 767px) {

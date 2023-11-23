@@ -42,7 +42,7 @@ ul {
 }
 
 .section-padding {
-    padding: 5% 2%;
+    padding: 70px 35px;
 }
 
 .main-btn {
@@ -66,8 +66,18 @@ ul {
       font-size: 14px;
     }
     .section-padding {
-        padding: 10% 25px;
+        padding: 40px 30px;
     }
+}
+
+@media (max-width: 767px) {
+  .section-padding {
+    padding: 40px 20px;
+  }
+
+  .main-btn {
+    padding: 8px 20px;
+  }
 }
 
 /* header */
@@ -109,7 +119,7 @@ nav ul li a:hover, nav ul li a.active {
 
 nav .nav-btn {
     background-color: var(--green-m);
-    padding: 12px 23px;
+    padding: 10px 23px;
     border-radius: var(--radius);
     transition: 0.3s;
     border: 1px solid var(--green-m);
@@ -327,6 +337,14 @@ nav .dropdown {
     border-radius: 20px;
     max-width: 100%;
     padding: 0 10px;
+    transition: var(--transition);
+    -webkit-filter: grayscale(1);
+   filter: grayscale(1);
+}
+
+.main-slider .case-study-slider img:hover {
+   -webkit-filter: grayscale(0);
+   filter: grayscale(0);
 }
 
 .slick-dots li button:before {
@@ -366,15 +384,15 @@ nav .dropdown {
     .main-slider h3 {
         font-size: 28px;
     }
+
+    .main-slider a {
+      text-decoration: none;
+      text-align: center;
+      font-size: 14px;
+  }
 }
 
 @media (max-width: 767px) {
-    .main-slider a {
-        text-decoration: none;
-        text-align: center;
-        font-size: 14px;
-    }
-
     .main-slider p {
         font-size: 14px;
     }
@@ -390,7 +408,6 @@ footer {
   background-image: url("../images/footer-bg.png");
   background-position: center;
     background-size: cover;
-    font-size: 14px;
     padding: 70px 0;
 }
 
@@ -414,11 +431,10 @@ footer hr {
 
 footer .social-links a {
     background-color: #FFFFFF33;
-    padding: 8px 10px;
+    padding: 6px 9px;
     border-radius: 6px;
     margin-right: 14px;
-    font-size: 14px;
-    width: 35px;
+    width: 37px;
     text-align: center;
 }
 
@@ -455,6 +471,10 @@ footer p {
 }
 
 @media (max-width: 767px) {
+  footer {
+    font-size: 14px;
+  }
+
   footer .column-1, footer .column {
     width: 100%;
     margin-bottom: 14px;

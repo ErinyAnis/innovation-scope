@@ -125,9 +125,10 @@
                         <input type="text" name="full_name" id="full-name" placeholder="Your Name" required>
                     </div>
                     <div class="col-md-6">
-                        <label for="upload-cv">Upload Cv</label>
-                        <input type="file" name="upload_cv" id="upload-cv" placeholder="No file choosen" required>
+                        <label for="email">Email*</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email" required>
                     </div>
+                    
                 </div>
                 <div class="row">
                     <div class="col-md-6">
@@ -159,9 +160,15 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <label for="email">Email*</label>
-                        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                        <label for="email">LinkedIn</label>
+                        <input type="text" name="email" id="email" placeholder="Enter your LinkedIn URL">
                     </div>
+                    <div class="col-md-6">
+                        <label for="upload-cv">Upload Cv</label>
+                        <input type="file" name="upload_cv" id="upload-cv" placeholder="No file choosen" required>
+                    </div>
+                </div>  
+                <div class="row">
                     <div class="col-md-6">
                         <label>How did you hear about us?</label>
                         <div class="rev-select">
@@ -182,12 +189,6 @@
                             </ul>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <label for="email">LinkedIn/Website</label>
-                        <input type="email" name="email" id="email">
-                    </div>
                     <div class="col-md-6">
                         <label for="hear">How do you like to meet?</label>
                         <div class="rev-select">
@@ -204,6 +205,7 @@
                             </ul>
                         </div>
                     </div>
+                    
                 </div>
                 <div class="text-center mt-3">
                     <button type="submit">Submit</button>

@@ -41,7 +41,7 @@ $(document).ready(function() {
                         arrows: true,
                         prevArrow: "<img class='a-left control-c prev slick-prev' src='images/prev-arrow.png'>",
                         nextArrow: "<img class='a-right control-c next slick-next' src='images/next-arrow.png'>",
-                        dots: false,
+                        dots: true,
                         slidesToShow: 1,
                         slidesToScroll: 1,
                         

@@ -7,4 +7,13 @@ $(document).ready(function () {
             $("nav").removeClass("fixed-top");
         }
     });
+
+    // $(selector).countMe(delay,speed)
+    $(".counter-y").countMe(500, 65);
+    $(".counter-c").countMe(500, 65);
+    $(".counter-p").countMe(500, 65);
+
+    
 });
+
+

@@ -8,8 +8,8 @@
     --gray-text: #9795B5;
     --gray-1000: #767494;
     --gray-800: #ADABC3;
-    --gray-300:#F9F9FF;
-    --gray-500:#E7E6F2;
+    --gray-300: #F9F9FF;
+    --gray-500: #E7E6F2;
     --radius: 8px;
     --transition: 0.3s;
 }
@@ -20,29 +20,33 @@ body {
 
 /* head */
 .talk-to-expert h2 {
-  font-weight: 700;
-  font-size: 60px;
+    font-weight: 700;
+    font-size: 60px;
 }
 
 .talk-to-expert h3 {
-  color: var(--green-p);
-  opacity: 0.5;
-  font-weight: 700;
-  font-size: 50px;
+    color: var(--green-p);
+    opacity: 0.5;
+    font-weight: 700;
+    font-size: 50px;
 }
 
 .talk-to-expert .line {
-  width: 73px;
-  height: 4px;
-  background-color: var(--green-p);
-  opacity: 0.5;
-  margin: 0 15px 0 40px;
+    width: 73px;
+    height: 4px;
+    background-color: var(--green-p);
+    opacity: 0.5;
+    margin: 0 15px 0 40px;
 }
 
 .talk-to-expert h4 {
     font-size: 18px;
     font-weight: 300;
     margin-bottom: 20px;
+}
+
+.talk-to-expert .links {
+    flex-wrap: wrap;
 }
 
 .talk-to-expert .links a {
@@ -58,6 +62,12 @@ body {
     color: var(--green-p);
 }
 
+@media (max-width: 767px) {
+    .talk-to-expert .links {
+        flex-wrap: nowrap;
+    }
+}
+
 /* form */
 .talk-to-expert form label {
     display: block;
@@ -65,7 +75,8 @@ body {
     margin-bottom: 5px;
 }
 
-.talk-to-expert form input, .talk-to-expert form textarea {
+.talk-to-expert form input,
+.talk-to-expert form textarea {
     padding: 4px 10px;
 }
 
@@ -80,19 +91,26 @@ body {
     width: 100%;
 }
 
-.talk-to-expert form input, .talk-to-expert form input::placeholder, .talk-to-expert form textarea,  .talk-to-expert form textarea::placeholder {
+.talk-to-expert form input,
+.talk-to-expert form input::placeholder,
+.talk-to-expert form textarea,
+.talk-to-expert form textarea::placeholder {
     color: var(--black);
     font-size: 14px;
 }
 
-.talk-to-expert form input, .talk-to-expert form textarea {
-    border: 2px solid var(--white);
+.talk-to-expert form input,
+.talk-to-expert form textarea {
+    border: 1px solid var(--white);
     background-color: #F2F1FA66;
     border-radius: 5px;
+    color: var(--white);
 }
 
-.talk-to-expert form input:focus, .talk-to-expert form textarea:focus {
+.talk-to-expert form input:focus,
+.talk-to-expert form textarea:focus {
     outline: none;
+    border: 1px solid var(--green-p);
 }
 
 .talk-to-expert form button {
@@ -113,14 +131,15 @@ body {
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 /* Firefox */
 input[type=number] {
-  -moz-appearance: textfield;
+    -moz-appearance: textfield;
 }
+
 /* end-form */
 
 /* side-content */
@@ -134,7 +153,8 @@ input[type=number] {
     padding-left: 18px;
 }
 
-.talk-to-expert .side-content p, .talk-to-expert .side-content ul li {
+.talk-to-expert .side-content p,
+.talk-to-expert .side-content ul li {
     font-size: 18px;
 }
 
@@ -176,13 +196,14 @@ input[type=number] {
     .talk-to-expert .links {
         white-space: nowrap;
         overflow-x: auto;
-        -webkit-overflow-scrolling: touch; 
+        -webkit-overflow-scrolling: touch;
         -ms-overflow-style: -ms-autohiding-scrollbar;
+
     }
 
     .talk-to-expert .links::-webkit-scrollbar {
      display: none;
- }
+    }
 
     .talk-to-expert .links a {
         font-size: 12px;
@@ -192,7 +213,8 @@ input[type=number] {
         font-size: 18px;
     }
 
-    .talk-to-expert .side-content p, .talk-to-expert .side-content ul li {
+    .talk-to-expert .side-content p,
+    .talk-to-expert .side-content ul li {
         font-size: 14px;
     }
 
@@ -203,7 +225,7 @@ input[type=number] {
     .talk-to-expert form button {
         font-size: 14px;
     }
-    
+
 }
 
 /* ------------------------------------------------*/
@@ -224,19 +246,28 @@ input[type=number] {
 
 .clients .images-container {
     width: 18%;
+    padding: 10px;
 }
 
 .clients .images-container img {
     max-width: 100%;
+    transition: var(--transition);
+    -webkit-filter: grayscale(1);
+   filter: grayscale(1);
+}
+
+.clients .images-container img:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
 }
 
 @media (max-width: 992px) {
-   .clients h3 {
-    font-size: 30px;
-   } 
+    .clients h3 {
+        font-size: 30px;
+    }
 
-   .clients h3 span {
-    font-size: 30px;
+    .clients h3 span {
+        font-size: 30px;
     }
 
     .clients .images-container {
@@ -259,26 +290,37 @@ input[type=number] {
 .talks h4 {
     font-weight: 600;
     font-size: 60px;
+    margin-bottom: 20px
 }
 
 .talks .talk-card {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+.talks .talk-card .img-holder {
+    overflow: hidden;
+    border-radius: var(--radius);
 }
 
 .talks .talk-card .main-img {
     width: 100%;
-    border-radius: var(--radius);
+   
+    transition: var(--transition);
+}
+
+.talks .talk-card .main-img:hover {
+    transform: scale(1.2);
 }
 
 .talks .talk-card .head-title {
     font-weight: 600;
-    margin-top: 10px;
+    margin-top: 15px;
     color: var(--gray-800);
+    font-size: 14px;
 }
 
 .talks .talk-card h5 {
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 22px;
+    font-weight: 700;
 }
 
 .talks .talk-card .arrow-icon {
@@ -296,7 +338,7 @@ input[type=number] {
 
 @media (max-width: 767px) {
     .talks h4 {
-        font-size: 46px
+        font-size: 40px
     }
 
     .talks .talk-card .head-title {
