@@ -131,7 +131,7 @@
                         <a href="#">Video Editing</a>
                         <a href="#">Others</a>
                     </div>
-                    <form action="" class="d-none d-lg-block">
+                    <form action="" class="d-none d-lg-block" id="talk-to-expert" method="post">
                         <div class="row justify-content-between">
                             <div class="col-lg-6">
                                 <label for="full-name">Full Name*</label>
@@ -276,6 +276,7 @@
     
     <script src="vendor/jquery/jquery.js"></script>
     <script src="vendor/bootstrap-5.3.0-dist/js/bootstrap.js"></script>
+    <script src="vendor/jquery-validate/jquery.validate.min.js"></script>
     <script>
         $(document).ready(function () {
             $(window).on('scroll', function () {
@@ -286,9 +287,40 @@
                     $("nav").removeClass("fixed-top");
                 }
             });
+
+            $("#talk-to-expert").validate({
+                rules: {
+                    full_name: {
+                        required: true,
+                        minlength: 2,
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    phone: {
+                        required: true,
+                        number: true
+                    },
+                },
+                messages: {
+                    full_name: {
+                        required: "Please enter your name",
+                        minlength: "Name must be at least 2 characters long",
+                    },
+                    email: {
+                        required: "Please enter your email address",
+                        email: "Please enter a valid email address"
+                    },
+                    phone: {
+                        required: "Please enter your phone",
+                        number: "phone number must be a number"
+                    },
+                }
+            });
         });
     </script>
-    </script>
+    
     </body>
     
     </html>

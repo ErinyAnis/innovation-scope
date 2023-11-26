@@ -118,7 +118,7 @@
     <section class="jobs">
         <div class="section-padding container">
             <h2 class="mb-3">Please Fill The Next Form.</h2>
-            <form action="">
+            <form action="" type="post" id="jobs">
                 <div class="row">
                     <div class="col-md-6">
                         <label for="full-name">Full Name*</label>
@@ -137,8 +137,8 @@
                     </div>
                     <div class="col-md-6">
                         <label>Position</label>
-                        <div class="rev-select">
-                            <select class="rev-select-box select-hidden">
+                        <div name="position" class="rev-select">
+                            <select name="position" class="rev-select-box select-hidden" required>
                                 <option value="hide">Please choose an option</option>
                                 <option value="UI/UX Designer">UI/UX Designer</option>
                                 <option value="Front-End Developer">Front-End Developer</option>
@@ -147,7 +147,7 @@
                                 <option value="Content Creator">Content Creator</option>
                             </select>
                             <div class="select-styled">Please choose an option</div>
-                            <ul class="select-options" style="display: none;">
+                            <ul class="select-options" name="position" style="display: none;">
                                 <li rel="hide">Please choose an option</li>
                                 <li rel="UI/UX Designer">UI/UX Designer</li>
                                 <li rel="Front-End Developer">Front-End Developer</li>
@@ -164,7 +164,7 @@
                         <input type="text" name="email" id="email" placeholder="Enter your LinkedIn URL">
                     </div>
                     <div class="col-md-6">
-                        <label for="upload-cv">Upload Cv</label>
+                        <label for="upload-cv">Upload CV*</label>
                         <input type="file" name="upload_cv" id="upload-cv" placeholder="No file choosen" required>
                     </div>
                 </div>  
@@ -279,6 +279,7 @@
     <script src="vendor/jquery/jquery.js"></script>
     <script src="vendor/bootstrap-5.3.0-dist/js/bootstrap.js"></script>
     <script src="js/custom-selectbox.js"></script>
+    <script src="vendor/jquery-validate/jquery.validate.min.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -290,8 +291,53 @@
                     $("nav").removeClass("fixed-top");
                 }
             });
+
+            $("#jobs").validate({
+                rules: {
+                    full_name: {
+                        required: true,
+                        minlength: 2,
+                    },
+                     email: {
+                        required: true,
+                        email: true
+                    },
+                    phone : {
+                        required: true,
+                        number: true
+                    },
+                    position : {
+                        required: true,
+                    },
+                    upload_cv : {
+                        required: true,
+                    }
+                },
+                messages: {
+                    full_name: {
+                        required: "Please enter your name",
+                        minlength: "Name must be at least 2 characters long",
+                    },
+                     email: {
+                        required: "Please enter your email address",
+                        email: "Please enter a valid email address"
+                    },
+                    phone: {
+                        required: "Please enter your phone",
+                        number: "phone number must be a number"
+                    },
+                    position: {
+                        required: "please select a position" ,
+                    },
+                    upload_cv: {
+                        required: "Please upload your cv",
+                    },
+                }
+            });
         });
     </script>
+    <script>
+
     </script>
 </body>
 

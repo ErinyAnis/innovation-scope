@@ -402,6 +402,17 @@ nav .dropdown {
     }
 }
 
+form label.error {
+  margin-top: -10px;
+  font-weight: 400;
+  color: #FD594D;
+  font-size: 12px;
+}
+
+form input.error, form textarea.error {
+  border: 1px solid #FD594D !important;
+}
+
 
 /* footer */
 footer {

@@ -163,15 +163,15 @@
                 <h3 class="main-title">If You Got Any Questions</h3>
                 <p>Please Don’t Hesitate To Send Us A Message</p>
             </div>
-                <form action="">
+                <form action="" id="get_in_touch">
                 <div class="row mb-3">
                     <div class="col-md-6">
-                        <input type="text" name="name" placeholder="Your Name">
-                        <input type="email" name="email" placeholder="Your Email">
-                        <input type="number" name="phone" placeholder="Phone Number">
+                        <input type="text" name="name" placeholder="Your Name*" required>
+                        <input type="email" name="email" placeholder="Your Email*" required>
+                        <input type="number" name="phone" placeholder="Phone Number*" required>
                     </div>
                     <div class="col-md-6">
-                        <textarea name="message" placeholder="Message"></textarea>
+                        <textarea name="message" placeholder="Message" required></textarea>
                     </div>
                 </div>
                 <div class="text-center">
@@ -273,6 +273,7 @@
     <script src="vendor/slick-carousel/js/slick.min.js"></script>
     <script src="vendor/counter/countMe.min.js"></script>
     <script src="js/slider.js"></script>
+    <script src="vendor/jquery-validate/jquery.validate.min.js"></script>
     <script>
         $(document).ready(function () {
             $(window).on('scroll', function () {
@@ -283,8 +284,43 @@
                     $("nav").removeClass("fixed-top");
                 }
             });
+            $("#get_in_touch").validate({
+                rules: {
+                    name: {
+                        required: true,
+                        minlength: 2,
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    phone: {
+                        required: true,
+                        number: true
+                    },
+                    message: {
+                        required: true
+                    }
+                },
+                messages: {
+                    name: {
+                        required: "Please enter your name",
+                        minlength: "Name must be at least 2 characters long",
+                    },
+                    email: {
+                        required: "Please enter your email address",
+                        email: "Please enter a valid email address"
+                    },
+                    phone: {
+                        required: "Please enter your phone",
+                        number: "phone number must be a number"
+                    },
+                    message: {
+                        required: "Please enter your message",
+                    },
+                }
+            });
         });
-    </script>
     </script>
     </body>
     
