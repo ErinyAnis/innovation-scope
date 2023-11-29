@@ -42,7 +42,8 @@ ul {
 }
 
 .section-padding {
-    padding: 70px 35px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 .main-btn {
