@@ -423,14 +423,6 @@ footer {
     padding: 70px 0;
 }
 
-footer .column-1 {
-  width: 30%;
-}
-
-footer .column {
-  width: 23%;
-}
-
 footer .logo {
   width: 150px;
 }
@@ -471,25 +463,9 @@ footer p {
       padding-right: 25%;
 }
 
-@media (max-width: 992px) {
-  footer .column-1 {
-    width: 50%;
-    margin-bottom: 10px;
-  }
-
-  footer .column {
-    width: 50%;
-  }
-}
-
 @media (max-width: 767px) {
   footer {
     font-size: 14px;
-  }
-
-  footer .column-1, footer .column {
-    width: 100%;
-    margin-bottom: 14px;
   }
 
   footer .social-links a {
