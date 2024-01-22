@@ -25,6 +25,10 @@ body {
   box-sizing: border-box;
 }
 
+.container {
+  width: 1600px;
+}
+
 a {
   text-decoration: none;
   color: var(--white);
