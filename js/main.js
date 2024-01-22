@@ -13,7 +13,6 @@ $(document).ready(function () {
     $(".counter-c").countMe(500, 65);
     $(".counter-p").countMe(500, 65);
 
-    
 });
 
 

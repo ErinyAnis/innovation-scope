@@ -21,11 +21,11 @@ body {
 /* our-services */
 .our-services h2 {
     font-weight: 700;
-    font-size: 40px;
+    font-size: 46px;
 }
 
 .our-services p {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 24px;
     margin-bottom: 30px;
 }
@@ -57,7 +57,6 @@ body {
 
 .our-services .card .desc {
     color: var(--white);
-    font-size: 14px;
 }
 
 .our-services .card .hover-icon {
@@ -80,13 +79,13 @@ body {
     background: linear-gradient(149deg, rgb(56 117 114 / 73%) 0%, rgb(52 74 78 / 73%) 35%, rgb(44 54 52 / 57%) 100%);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
     .our-services h2 {
-        font-size: 28px;
+        font-size: 36px;
     }
 
     .our-services p {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .our-services .card {

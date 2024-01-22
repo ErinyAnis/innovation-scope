@@ -60,7 +60,7 @@ $(document).ready(function() {
 
                 responsive: [
                 {
-                    breakpoint: 767,
+                    breakpoint: 992,
                     settings: {
                         arrows: true,
                         prevArrow: "<img class='a-left control-c prev slick-prev' src='images/prev-arrow.png'>",
@@ -70,7 +70,8 @@ $(document).ready(function() {
                         slidesToScroll: 1,
                         
                     }
-                },
+                    },
+                       
             ] 
             });
     });

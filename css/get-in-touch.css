@@ -17,30 +17,26 @@
 /* main-components */
 .main-title {
     font-weight: 700;
-    font-size: 42px;
+    font-size: 48px;
 }
 
 @media (max-width: 992px) {
     .main-title {
-        font-size: 28px;
+        font-size: 38px;
     }
 }
 
 .title p {
     color: var(--basic);
     font-weight: 500;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 @media (max-width: 767px) {
     .title p {
-        font-size: 14px;
+        font-size: 18px;
     }
 }
-
-
-
-
 
 /* get-in-touch-landing */
 .get-in-touch-landing img {
@@ -62,17 +58,27 @@
     font-size: 70px;
 }
 
+@media (max-width: 992px) {
+    .get-in-touch-landing .head-title h2 {
+        font-size: 40px;
+    }
+
+    .get-in-touch-landing .head-title h2 span {
+        font-size: 44px;
+    }
+}
+
 @media (max-width: 767px) {
     .get-in-touch-landing .head-title {
         bottom: 14%;
     }
 
     .get-in-touch-landing .head-title h2 {
-        font-size: 24px;
+        font-size: 36px;
     }
 
     .get-in-touch-landing .head-title h2 span {
-        font-size: 28px;
+        font-size: 40px;
     }
 }
 
@@ -92,23 +98,35 @@
 
 .get-in-touch .contact-item {
     text-align: center;
-    width: 35%;
-    height: 100px;
+    padding: 0 15px;
+    width: 50%;
+}
+
+.get-in-touch .contact-item .img-holder {
+    height: 40px;
 }
 
 .get-in-touch .contact-item img {
-    height: 35px;
+    height: 100%;
+    object-fit: contain;
 }
 
-.get-in-touch .contact-item div {
-    font-size: 14px;
+.get-in-touch .contact-item .info {
+    font-size: 16px;
     font-weight: 500;
     margin-top: 15px;
+    min-height: 70px;
 }
 
 @media (max-width: 992px) {
     .get-in-touch .contact {
         padding: 0 5%;
+    }
+    .get-in-touch .contact-item .img-holder {
+        height: 30px;
+    }
+    .get-in-touch .contact-item .info {
+        font-size: 14px;
     }
 }
 
@@ -119,7 +137,7 @@
     }
 
     .get-in-touch .title h3 {
-        font-size: 28px;
+        font-size: 32px;
         color: var(--basic);
         text-transform: uppercase;
     }
@@ -139,7 +157,6 @@
         margin-bottom: 15px;
     }
    
-
     .get-in-touch .middle {
         border: none;
     }
@@ -148,19 +165,21 @@
     }
 
     .get-in-touch .contact-item .img-holder {
-        width: 20px;
+         width: 22px;
     }
 
      .get-in-touch .contact-item .img-holder img {
         width: 100%;
-        object-fit: contain;
-        height: auto;
+        
     }
-
-    .get-in-touch .contact-item div {
-        font-size: 12px;
+    .get-in-touch .contact-item .info {
+        min-height: auto;
+        margin-top: 0;
+        font-size: 16px;
+        padding-left: 3px;
     }
 }
+/* end-get-in-touch */
 
 /* questions  */
 .questions {
@@ -172,7 +191,7 @@
 .questions input, .questions textarea {
     width: 100%; 
     padding: 8px 12px;
-    font-size: 14px;
+    font-size: 16px;
     border-radius: 5px;
     background-color: #F2F1FA66;
     border: 1px solid var(--white);
@@ -195,13 +214,12 @@
 
 .questions textarea {
     resize: none;
-    height: 145px;
+    height: 156px;
 }
 
 .questions form button {
     border-radius: var(--radius);
     padding: 7px 30px;
-    font-size: 14px;
     border: 1px solid var(--white);
     transition: var(--transition);
 }
@@ -229,7 +247,7 @@ input[type=number] {
 
 @media (max-width: 767px) {
     .questions input, .questions textarea {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .questions form button {
@@ -240,7 +258,7 @@ input[type=number] {
 /* connect-with-us */
 .connect-with-us .social-links a {
     color: var(--black);
-    padding: 6px 10px;
+    padding: 6px;
     background-color: #43404033;
     margin: 5px;
     border-radius: 10px;
@@ -256,9 +274,9 @@ input[type=number] {
 
 @media (max-width: 767px) {
     .connect-with-us .social-links a {
-        padding: 5px;
+        padding: 6px;
         margin: 4px;
-        width: 32px;
+        width: 36px;
         font-size: 16px;
     }
 }

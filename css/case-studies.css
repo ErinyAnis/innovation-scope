@@ -26,7 +26,7 @@
 
 .case-studies .title p {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .case-studies .card-holder {
@@ -52,11 +52,11 @@
 
 @media (max-width: 767px) {
     .case-studies .title h3 {
-        font-size: 34px;
+        font-size: 45px;
     }
 
     .case-studies .title p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .case-studies .card-holder {
@@ -74,7 +74,7 @@
     }
 }
 
-.gallery{
+.gallery {
     padding-bottom: 100px;
     padding: 0 30px;
 }
@@ -88,8 +88,8 @@
     margin-bottom: 25px;
 }
 
-.gallery .controls .buttons{
-    font-size: 18px;
+.gallery .controls .buttons {
+    font-size: 22px;
     line-height: 40px;
     cursor: pointer;
     margin:0 20px;
@@ -98,7 +98,7 @@
     border-bottom: 3px solid transparent;
 }
 
-.gallery .controls .buttons.active{
+.gallery .controls .buttons.active {
     border-bottom: 3px solid var(--green-p);
 }
 
@@ -140,7 +140,7 @@
     }
 
     .gallery .controls .buttons {
-    font-size: 15px;
+    font-size: 18px;
     line-height: 35px;
     margin: 0 10px;
     }
@@ -181,12 +181,17 @@
     object-fit: cover;
 }
 
+.case-studies-details .side-info {
+    font-size: 18px;
+}
+
 .case-studies-details .side-info h2 {
     font-weight: 600;
     border-bottom: 3px solid var(--green-p);
     width: fit-content;
     padding-bottom: 2px;
-    font-size: 20px;
+    font-size: 22px;
+    margin-bottom: 10px;
 }
 
 .case-studies-details .side-info .cat-name {
@@ -197,12 +202,25 @@
     margin-right: 10px;
     padding: 5px 10px;
     transition: var(--transition);
+    font-size: 16px;
 }
 
 .case-studies-details .side-info .cat-name:hover {
     background-color: var(--green-p);
     color: var(--white);
     border: 1px solid var(--green-p);
+}
+
+.case-studies-details .side-info .scroll {
+  white-space: nowrap; /* [1] */
+  overflow-x: auto; /* [2] */
+  -webkit-overflow-scrolling: touch; /* [3] */
+  -ms-overflow-style: -ms-autohiding-scrollbar; /* [4] */ 
+}
+
+/* [5] */
+.case-studies-details .side-info  .scroll::-webkit-scrollbar {
+  display: none;
 }
 
 .case-studies-details .side-info ul {
@@ -245,11 +263,11 @@
     }
 
     .case-studies-details .side-info h2 {
-        font-size: 18px;
+        font-size: 20px;
     }
 
-    .case-studies-details .side-info .cat-name, .case-studies-details .side-info ul, .case-studies-details .side-info a, .case-studies-details .side-info p {
-        font-size: 14px;
+    .case-studies-details .side-info {
+        font-size: 16px;
     }
 }
 
@@ -263,7 +281,7 @@
 
 .case-studies-details .about h3 {
     font-weight: 700;
-    font-size: 30px;
+    font-size: 32px;
     margin-bottom: 3px;
 }
 
@@ -275,7 +293,7 @@
 
 @media (max-width: 767px) {
     .case-studies-details .about h3 {
-        font-size: 18px;
+        font-size: 28px;
     }
 
     .case-studies-details .about p {
@@ -290,7 +308,7 @@
 
 .cards h3 {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 40px;
 }
 
 .cards .card-holder {
@@ -303,9 +321,9 @@
     z-index: 2;
 }
 
-.cards .card-holder .two, .cards .card-holder .three , .cards .card-holder .four {
-    height: 137px;
-    width: 66px;
+.cards .card-holder .one, .cards .card-holder .two, .cards .card-holder .three , .cards .card-holder .four {
+        height: 180px;
+    width: 85px;
     position: relative;
 }
 
@@ -313,29 +331,34 @@
 .cards .card-holder .box {
     border: 1px solid var(--gray-600);
     background-color: var(--gray-300);
-    height: 100px;
+    height: 125px;
     width: 100%;
     border-radius: 0 120px 0 0;
     position: relative;
+    margin-left: -5px;
 }
 
 .cards .card-holder .box-2:after {
     content: '';
     position: absolute;
-    height: 29px;
-    width: 22px;
+    height: 44px;
+    width: 45px;
     background-color: var(--gray-300);
-    bottom: 13px;
+    bottom: 9px;
     z-index: 1;
-    left: -21px;
+    left: -25px;
 }
 
 
 .cards .card-holder .box .inner-text {
     width: 60%;
-    margin: 12px 0 0 14px;
-    font-size: 14px;
+    margin: 20px 0 0 17px;
+    font-size: 15px;
     color: var(--black);
+    display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
 }
 
 @media (max-width: 992px) {
@@ -350,11 +373,23 @@
     }
 
     .cards h3 {
-        font-size: 28px;
+        font-size: 30px;
+    }
+
+    .cards .card-holder .box {
+        height: 110px;
+        width: 70%;
+    }
+
+    .cards .card-holder .one, .cards .card-holder .two, .cards .card-holder .three, .cards .card-holder .four {
+    height: 150px;
+    width: 80px;
+    }
+
+    .cards .card-holder .box-2:after {
+        height: 33px;
     }
 }
-
-
 
 /* goal */
 .goal {
@@ -368,7 +403,7 @@
 .goal h4 {
     margin-bottom: 3px;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 30px;
 }
 
 .goal p {

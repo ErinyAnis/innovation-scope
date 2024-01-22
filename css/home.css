@@ -23,7 +23,7 @@
 }
 
 .landing-page img {
-    max-width: 100%;
+    width: 100%;
 }
 
 .landing-page .landing-content {
@@ -33,33 +33,43 @@
 }
 
 .landing-page .landing-content .head {
-    font-size: 30px;
+    font-size: 34px;
 }
 
 .landing-page .landing-content h1 {
     font-family: 'Gayathri', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 60px;
+    font-size: 64px;
 }
 
 @media (max-width: 992px) {
     .landing-page .landing-content .head {
-        font-size: 14px;
-    }
-
-    .landing-page .landing-content h1 {
         font-size: 24px;
+    }
+    .landing-page .landing-content h1 {
+        font-size: 44px;
+    }
+    .landing-page .landing-content a {
+        font-size: 16px;
     }
 }
 
 @media (max-width: 767px) {
     .landing-page img {
-        height: 260px;
         object-fit: cover;
     }
     .landing-page .landing-content {
         top: 58%;
+    }
+    .landing-page .landing-content .head {
+    font-size: 22px;
+    }
+    .landing-page .landing-content h1 {
+    font-size: 34px;
+    }
+     .landing-page .landing-content a {
+        font-size: 14px;
     }
 }
 
@@ -82,12 +92,12 @@
 }
 
 .about-us h3 {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 400;
 }
 
 .about-us p {
-    font-size: 14px;
+    font-size: 18px;
     padding-right: 42%;
 }
 
@@ -97,15 +107,15 @@
 }
 
 .about-us ul li {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .about-us ul li:not(:last-child) {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 .about-us .arrow {
-    width: 20px;
+    width: 22px;
     margin-right: 10px;
 }
 
@@ -128,11 +138,11 @@
 
 
     .about-us h2 {
-        font-size: 28px;
+        font-size: 32px;
     }
 
     .about-us h3 {
-        font-size: 20px;
+        font-size: 22px;
         color: var(--grey);
         font-weight: 400;
     }
@@ -154,14 +164,14 @@
 
 .counter h2 {
     font-weight: 800;
-    font-size: 46px;
+    font-size: 50px;
     color: var(--basic);
     margin-bottom: 0;
 }
 
 .counter h3 {
      font-weight: 700;
-     font-size: 36px;
+     font-size: 38px;
      color: var(--basic);
 }
 
@@ -171,19 +181,19 @@
 
 .counter p {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .counter .counter-card {
     border: 1px solid var(--white);
     border-radius: 11px;
     padding: 22px 10px;
-    width: 120px;
+    width: 125px;
     background: linear-gradient(180deg, rgb(28 58 58) 0%, #2b4947d4 18%, #0FBCB3 100%);
 }
 
 .counter .counter-card .number {
-    font-size: 38px;
+    font-size: 40px;
     font-weight: 700;
 }
 
@@ -194,34 +204,22 @@
 
 @media (max-width: 992px) {
     .counter .counter-card {
-        width: 100px;
+        width: 125px;
         padding: 20px 10px;
     }
 
     .counter .counter-card .number {
-        font-size: 24px;
-    }
-
-    .counter .counter-card .desc {
-        font-size: 12px;
+        font-size: 28px;
     }
 
     .counter .counter-padding {
         padding: 40px 20px;
     }
-}
-
-@media (max-width: 767px) {
-    .counter p {
-        font-size: 14px;
-    }
-
     .counter h2 {
-        font-size: 34px;
+        font-size: 40px;
     }
-
     .counter h3 {
-        font-size: 20px;
+        font-size: 28px;
     }
 }
 
@@ -242,12 +240,14 @@
 /* reviews */
 .reviews .head-title h2 {
     font-weight: 700;
-    font-size: 40px;
+    font-size: 44px;
+    margin-bottom: 0;
 }
 
 .reviews .head-title div {
     color: var(--gray-text);
-    padding: 0 25%;
+    padding: 0 20%;
+    font-size: 18px;
 }
 
 .reviews .review-card {
@@ -276,7 +276,6 @@
 
 .reviews .review-card .box p {
     color: var(--gray-1000);
-    font-size: 14px;
     margin-bottom: 0;
     overflow: hidden;
     -webkit-line-clamp: 4;
@@ -305,7 +304,7 @@
 
 .reviews .review-card .user h4 {
     color: var(--black);
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 5px;
     margin-bottom: 3px;
     font-weight: 600;
@@ -317,7 +316,7 @@
 
 .reviews .review-card .user .position {
     color: var(--grey);
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .reviews .slick-dots li button:before {
@@ -328,19 +327,30 @@
     background-color: var(--green-p);
 }
 
+@media (max-width: 992px) {
+    .reviews .review-card .box p {
+        font-size: 14px;
+    }
+    .reviews .review-card .user h4 {
+        font-size: 18px;
+    }
+    .reviews .review-card .user .position {
+        font-size: 14px;
+    }
+}
+
 @media (max-width: 767px) {
     .reviews .head-title h2 {
-        font-size: 30px;
-        padding: 0 30px;
+        font-size: 36px;
+        padding: 0 42px;
     }
 
     .reviews .head-title div {
-        font-size: 14px;
+        font-size: 16px;
         padding: 0 10px;
     }
 
     .reviews .review-card .box p {
-        font-size: 12px;
         -webkit-line-clamp: 3;
         display: -webkit-box;
         -webkit-box-orient: vertical;
@@ -351,7 +361,6 @@
     .slick-dots li {
     width: 54px;
     }
-
 }
 
 /* talks */
@@ -367,7 +376,7 @@
 
 .talks h4 {
   font-weight: 700;
-  font-size: 34px;
+  font-size: 42px;
 }
 
 .talks .head-title img {
@@ -399,21 +408,17 @@
     font-weight: 600;
     margin-top: 10px;
     color: var(--gray-800);
+    font-size: 18px;
 }
 
 .talks .talk-card h5 {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
     color: var(--basic);
 }
 
 .talks .talk-card .arrow-icon {
-    height: 30px;
-}
-
-.talks .view-more {
-    font-size: 14px;
-    font-weight: 500;
+    height: 27px;
 }
 
 .talks .view-more:hover {
@@ -422,8 +427,8 @@
 
 .talks .view-more a {
   color: var(--basic);
-  font-size: 14px;
   transition: var(--transition);
+   font-weight: 500;
 }
 
 .talks .view-more a:hover {
@@ -437,7 +442,7 @@
   }
 
   .talks h4 {
-    font-size: 24px;
+    font-size: 34px;
   }
 
   .talks .info h5 {
@@ -447,10 +452,6 @@
   .talks .info p {
     font-size: 14px;
   }
-
-  .talks .talks .talk-card .head-title {
-        font-size: 14px;
-    }
 
     .talks .talks .talk-card h5 {
         font-size: 18px;
@@ -470,8 +471,11 @@
 }
 
 @media (max-width: 992px) {
+    .talks .talk-card h5 {
+        font-size: 20px;
+    }
   .talks .talk-card .head-title {
-        font-size: 14px;
+        font-size: 16px;
   }
 
   .talk-details .talk-card h5 {

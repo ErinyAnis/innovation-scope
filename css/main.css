@@ -83,7 +83,7 @@ ul {
 
 /* header */
 nav .logo img {
-  width: 135px;
+  width: 145px;
 }
 
 nav {
@@ -100,14 +100,14 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 10px;
+  margin: 0 12px;
 }
 
 nav ul li .nav-link {
   font-weight: 700;
   transition: var(--transition);
   color: var(--white) !important;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 nav ul li .nav-link i {
@@ -121,12 +121,12 @@ nav ul li a.active {
 
 nav .nav-btn {
   background-color: var(--green-m);
-  padding: 10px 23px;
+  padding: 10px 24px;
   border-radius: var(--radius);
   transition: 0.3s;
   border: 1px solid var(--green-m);
   color: var(--white);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -216,10 +216,29 @@ nav .dropdown {
   align-items: center;
   height: 70px;
 }
+header nav .nav-links {
+flex-wrap: nowrap;
+}
+
+@media (max-width: 1120px) {
+  nav .logo img {
+    width: 120px;
+  }
+  nav ul li .nav-link {
+    font-size: 16px;
+  }
+  nav ul li {
+    margin: 0 8px;
+  }
+  nav .nav-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
 
 @media (max-width: 992px) {
   nav {
-    padding: 10px 20px;
+    padding: 12px 20px;
     justify-content: space-between;
   }
 
@@ -233,7 +252,7 @@ nav .dropdown {
 
   nav ul {
     position: absolute;
-    top: 73px;
+    top: 70px;
     left: -100%;
     background-color: var(--white);
     height: 100vh;
@@ -317,15 +336,15 @@ nav .dropdown {
 
 .main-slider h3 {
   font-weight: 700;
-  font-size: 44px;
+  font-size: 48px;
 }
 
 .main-slider p {
   font-weight: 500;
+  font-size: 18px;
 }
 
 .main-slider a {
-  font-size: 14px;
   text-decoration: underline;
   transition: var(--transition);
 }
@@ -383,13 +402,16 @@ nav .dropdown {
 
 @media (max-width: 992px) {
   .main-slider h3 {
-    font-size: 28px;
+    font-size: 34px;
+  }
+
+  .main-slider p {
+    font-size: 16px;
   }
 
   .main-slider a {
     text-decoration: none;
     text-align: center;
-    font-size: 14px;
   }
 }
 
@@ -408,12 +430,17 @@ form label.error {
   margin-top: -10px;
   font-weight: 400;
   color: #fd594d;
-  font-size: 12px;
 }
 
 form input.error,
 form textarea.error {
   border: 1px solid #fd594d !important;
+}
+
+@media (max-width: 767px) {
+  form label.error {
+    font-size: 14px;
+  }
 }
 
 /* footer */
@@ -425,7 +452,7 @@ footer {
 }
 
 footer .logo {
-  width: 150px;
+  max-width: 170px;
 }
 
 footer hr {
@@ -435,12 +462,12 @@ footer hr {
 }
 
 footer .social-links a {
-  background-color: #ffffff33;
-  padding: 6px 9px;
-  border-radius: 6px;
-  margin-right: 14px;
-  width: 37px;
-  text-align: center;
+    background-color: #ffffff33;
+    padding: 7px;
+    border-radius: 6px;
+    margin-right: 14px;
+    width: 38px;
+    text-align: center;
 }
 
 footer a:hover {
@@ -448,7 +475,7 @@ footer a:hover {
 }
 
 footer h3 {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 600;
 }
 
@@ -461,7 +488,16 @@ footer .contacts i {
 }
 
 footer p {
-  padding-right: 25%;
+  padding-right: 20%;
+  font-size: 18px;
+}
+
+footer ul li a, footer .contacts {
+  font-size: 18px;
+}
+
+footer .social-links i {
+  font-size: 18px;
 }
 
 footer .copy-right a {
@@ -474,13 +510,28 @@ footer .copy-right a:hover {
 }
 
 @media (max-width: 767px) {
-  footer {
-    font-size: 14px;
+  footer .social-links a {
+    padding: 6px;
+    margin-right: 10px;
+    width: 36px;
   }
 
-  footer .social-links a {
-    padding: 7px 10px;
-    margin-right: 10px;
-    width: 35px;
+  footer h3 {
+    font-size: 20px;
+  }
+
+  footer p {
+    font-size: 16px;
+  }
+
+  footer ul li a, footer .contacts {
+    font-size: 16px;
+  }
+
+  footer .social-links i {
+    font-size: 16px;
+  }
+  footer .copy-right {
+    font-size: 14px;
   }
 }

@@ -97,10 +97,6 @@ input[type=number] {
         font-size: 30px;
     }
 
-    .jobs form label {
-        font-size: 14px;
-    }
-
     .jobs form input, .jobs form input::placeholder {
         font-size: 12px;
     }
